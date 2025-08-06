@@ -117,24 +117,25 @@ export default function Timetable({ selected }: Props) {
   
   const renderCellContent = (entries: TimetableEntry[], day: string, slot: string) => {
     if (entries.length === 0) {
-      return <div className="h-16 flex items-center justify-center text-muted-foreground text-xs">-</div>;
+      return <div className="h-10 flex items-center justify-center text-muted-foreground text-xs"></div>;
     }
 
     return (
-      <div className="space-y-1 p-1 h-full">
+      <div className="space-y-1 p-1 h-full min-h-10">
         {entries.map(({ courseId, classroom, classType }) => (
           <div
             key={`${day}-${slot}-${courseId}`}
             className={`
               ${generateCourseColor(courseId)}
-              border rounded px-2 py-1 text-xs font-medium
+              border rounded px-1 py-0.5 text-xs font-medium
               transition-all hover:scale-105 h-full flex flex-col justify-center items-center text-center
+              max-w-full overflow-hidden
             `}
           >
-            <div className="font-semibold">{courseId}</div>
-            <div className="text-xs opacity-80">{classroom}</div>
+            <div className="font-semibold text-xs leading-tight truncate w-full">{courseId}</div>
+            <div className="text-[10px] opacity-80 leading-tight truncate w-full">{classroom}</div>
             {classType !== 'class' && (
-              <div className="text-xs opacity-60 uppercase">{classType}</div>
+              <div className="text-[10px] opacity-60 uppercase leading-tight truncate w-full">{classType}</div>
             )}
           </div>
         ))}
@@ -179,19 +180,19 @@ export default function Timetable({ selected }: Props) {
         )}
       </div>
       
-      <div ref={timetableRef} className="overflow-x-auto">
-        <table className="w-full border-collapse">
+      <div ref={timetableRef} className="overflow-x-auto rounded-xl">
+        <table className="w-full border-collapse border-spacing-0">
           <thead>
             <tr>
-              <th className="bg-muted text-muted-foreground font-medium p-3 border border-border text-left min-w-20">
+              <th className="bg-muted text-muted-foreground font-medium p-2 text-left w-16">
                 Day
               </th>
               {timeSlots.map((slot) => (
                 <th
                   key={slot}
-                  className="bg-muted text-muted-foreground font-medium p-2 border border-border text-center min-w-32"
+                  className="bg-muted text-muted-foreground font-medium p-1 text-center w-20"
                 >
-                  <div className="text-xs">{slot}</div>
+                  <div className="text-[6px] leading-tight">{slot}</div>
                 </th>
               ))}
             </tr>
@@ -235,7 +236,7 @@ export default function Timetable({ selected }: Props) {
                   <td
                     key={`${day}-${currentSlot}`}
                     colSpan={colSpan}
-                    className="border border-border align-top min-h-16"
+                    className="align-top"
                   >
                     {renderCellContent(currentEntries, day, currentSlot)}
                   </td>
@@ -245,7 +246,7 @@ export default function Timetable({ selected }: Props) {
 
               return (
                 <tr key={day} className="hover:bg-accent/50 transition-colors">
-                  <td className="bg-muted/50 text-card-foreground font-medium p-3 border border-border">
+                  <td className="bg-muted/50 text-card-foreground font-medium p-2 text-sm">
                     {day}
                   </td>
                   {rowCells}
