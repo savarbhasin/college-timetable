@@ -102,7 +102,7 @@ export default function CourseSelector({ selected, onChange }: Props) {
 
       {/* Course Grid */}
       <div className={`transition-all duration-300 ${isExpanded || filter || selected.length === 0 ? 'max-h-80' : 'max-h-0'} overflow-hidden`}>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-h-80 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-border scrollbar-track-transparent">
+        <div className="grid px-1 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-h-80 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-border scrollbar-track-transparent">
           {filteredCourses.map(({ courseId, courseName }) => {
             const isSelected = selected.includes(courseId);
             return (
