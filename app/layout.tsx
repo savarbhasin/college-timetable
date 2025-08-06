@@ -1,5 +1,6 @@
 import '../styles/globals.css';
 import { ReactNode } from 'react';
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
   title: 'College Timetable',
