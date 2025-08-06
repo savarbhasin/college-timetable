@@ -11,6 +11,12 @@ export default function Home() {
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold text-foreground mb-2">College Timetable</h1>
         <p className="text-muted-foreground">Select your courses to view your personalized schedule</p>
+        <p className="text-muted-foreground text-sm italic">
+          made by
+          <a href="https://github.com/savarbhasin" className="text-blue-600 hover:underline ml-1">
+            savar
+          </a>
+        </p>
       </div>
       
       <CourseSelector selected={selectedCourses} onChange={setSelectedCourses} />
