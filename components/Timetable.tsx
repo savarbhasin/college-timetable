@@ -57,20 +57,7 @@ export default function Timetable({ selected }: Props) {
       // @ts-ignore
       const { toJpeg } = await import('html-to-image');
 
-      // Store original styles
-      const originalWidth = tableElement.style.width;
-      const originalMinWidth = tableElement.style.minWidth;
-      const originalFontSize = document.documentElement.style.fontSize;
-
-      // Set fixed dimensions for consistent export across devices
-      tableElement.style.width = 'max-content';
-      tableElement.style.minWidth = '1200px';
-      
-      // Ensure consistent font sizing
-      document.documentElement.style.fontSize = '16px';
-
-      // Wait for layout to settle
-      await new Promise(resolve => setTimeout(resolve, 100));
+    
 
       const dataUrl = await toJpeg(tableElement, {
         backgroundColor: '#0f172a',
@@ -84,10 +71,6 @@ export default function Timetable({ selected }: Props) {
         }
       });
 
-      // Restore original styles
-      tableElement.style.width = originalWidth;
-      tableElement.style.minWidth = originalMinWidth;
-      document.documentElement.style.fontSize = originalFontSize;
 
       const link = document.createElement('a');
       link.download = `timetable-${new Date().toISOString().split('T')[0]}.jpg`;
