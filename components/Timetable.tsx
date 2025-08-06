@@ -129,7 +129,132 @@ export default function Timetable({ selected }: Props) {
       console.error('Error generating PDF:', error);
     }
   };
+
+  // Download timetable as an iCalendar (.ics) file so users can import into Google Calendar
+  const downloadAsICS = () => {
+    if (!timetableRef.current) return;
+
+    // Helper to format date-time in YYYYMMDDTHHMMSS format
+    const pad = (n: number) => n.toString().padStart(2, '0');
+    const formatDateTime = (d: Date) => {
+      const hours = d.getHours();
+      const adjustedHours = hours < 8 ? hours + 12 : hours;
+      return `${d.getFullYear()}${pad(d.getMonth() + 1)}${pad(d.getDate())}T${pad(adjustedHours)}${pad(d.getMinutes())}00`;
+    };
+
+    // Find upcoming Monday (start of next week) as base date
+    const now = new Date();
+    const offsetToMonday = (1 - now.getDay() + 7) % 7; // getDay(): 0=Sun
+    const monday = new Date(now);
+    monday.setHours(0, 0, 0, 0);
+    monday.setDate(now.getDate() + offsetToMonday);
+
+    let icsLines: string[] = [
+      'BEGIN:VCALENDAR',
+      'VERSION:2.0',
+      'PRODID:-//College Timetable//EN',
+    ];
+
+    days.forEach((day, dayIndex) => {
+      const dayDate = new Date(monday);
+      dayDate.setDate(monday.getDate() + dayIndex);
+
+      let i = 0;
+      while (i < timeSlots.length) {
+        const slot = timeSlots[i];
+        const entries = getFilteredEntries(day, slot);
+
+        if (entries.length === 1) {
+          // Try to merge consecutive identical entries
+          const entry = entries[0];
+          let j = i + 1;
+          while (j < timeSlots.length) {
+            const nextEntries = getFilteredEntries(day, timeSlots[j]);
+            if (
+              nextEntries.length === 1 &&
+              nextEntries[0].courseId === entry.courseId &&
+              nextEntries[0].classroom === entry.classroom &&
+              nextEntries[0].classType === entry.classType
+            ) {
+              j++;
+            } else {
+              break;
+            }
+          }
+
+          // slot i is start, slot j-1 is end
+          const [startStr] = timeSlots[i].split('-');
+          const [, endStr] = timeSlots[j - 1].split('-');
+
+          const [startH, startM] = startStr.split(':').map(Number);
+          const [endH, endM] = endStr.split(':').map(Number);
+
+          const startDate = new Date(dayDate);
+          startDate.setHours(startH, startM, 0, 0);
+
+          const endDate = new Date(dayDate);
+          endDate.setHours(endH, endM, 0, 0);
+
+          const uid = `${entry.courseId}-${day}-${startStr}-${endStr}`;
+
+          icsLines.push(
+            'BEGIN:VEVENT',
+            `UID:${uid}@college-timetable`,
+            `SUMMARY:${entry.courseId}`,
+            `DTSTART:${formatDateTime(startDate)}`,
+            `DTEND:${formatDateTime(endDate)}`,
+            `LOCATION:${entry.classroom}`,
+            `DESCRIPTION:${entry.classType}`,
+            'RRULE:FREQ=WEEKLY',
+            'END:VEVENT'
+          );
+
+          i = j; // Skip processed slots
+        } else {
+          // Zero or multiple entries – create separate events per entry for this slot
+          entries.forEach((entry) => {
+            const [startStr, endStr] = slot.split('-');
+            const [startH, startM] = startStr.split(':').map(Number);
+            const [endH, endM] = endStr.split(':').map(Number);
+
+            const startDate = new Date(dayDate);
+            startDate.setHours(startH, startM, 0, 0);
+            const endDate = new Date(dayDate);
+            endDate.setHours(endH, endM, 0, 0);
+
+            const uid = `${entry.courseId}-${day}-${slot}`;
+
+            icsLines.push(
+              'BEGIN:VEVENT',
+              `UID:${uid}@college-timetable`,
+              `SUMMARY:${entry.courseId}`,
+              `DTSTART:${formatDateTime(startDate)}`,
+              `DTEND:${formatDateTime(endDate)}`,
+              `LOCATION:${entry.classroom}`,
+              `DESCRIPTION:${entry.classType}`,
+              'RRULE:FREQ=WEEKLY',
+              'END:VEVENT'
+            );
+          });
+          i++;
+        }
+      }
+    });
+
+    icsLines.push('END:VCALENDAR');
+
+    const blob = new Blob([icsLines.join('\r\n')], { type: 'text/calendar' });
+    const url = URL.createObjectURL(blob);
+
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `timetable-${new Date().toISOString().split('T')[0]}.ics`;
+    link.click();
+
+    URL.revokeObjectURL(url);
+  };
   
+
   const getFilteredEntries = (day: string, slot: string): TimetableEntry[] => {
     const entries = data[day]?.[slot] || [];
     if (selected.length === 0) return entries;
@@ -189,6 +314,13 @@ export default function Timetable({ selected }: Props) {
             >
               <Image className="w-4 h-4" />
               <span>JPEG</span>
+            </button>
+            <button
+              onClick={downloadAsICS}
+              className="flex items-center space-x-2 px-4 py-2 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/80 transition-colors text-sm font-medium"
+            >
+              <FileText className="w-4 h-4" />
+              <span>ICS</span>
             </button>
             {/* <button
               onClick={downloadAsPDF}
