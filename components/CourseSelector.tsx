@@ -1,44 +1,29 @@
 'use client';
 import { useState, useRef } from 'react';
 import { Search, X, Check, BookOpen } from 'lucide-react';
-import coursesData from '../courses.json';
+import coursesData from '@/public/courses.json';
+import { Course } from '@/lib/types';
+import { useCourseFilter } from '@/hooks/useCourseFilter';
+import { useCourseStore } from '@/lib/courseStore';
 
-interface Course {
-  courseId: string;
-  courseName: string;
-}
-
-interface Props {
-  selected: string[];
-  onChange: (ids: string[]) => void;
-}
-
-export default function CourseSelector({ selected, onChange }: Props) {
-  const [filter, setFilter] = useState('');
+export default function CourseSelector() {
   const [isExpanded, setIsExpanded] = useState(true);
   const searchInputRef = useRef<HTMLInputElement>(null);
-
-  const filteredCourses = (coursesData as Course[]).filter(
-    (course) =>
-      course.courseId.toLowerCase().includes(filter.toLowerCase()) ||
-      course.courseName.toLowerCase().includes(filter.toLowerCase()),
-  );
+  
+  const { selectedCourses, toggleCourse, clearCourses } = useCourseStore();
+  const courses = coursesData as Course[];
+  const { filter, setFilter, filteredCourses, hasFilter } = useCourseFilter(courses);
 
   const handleToggle = (courseId: string) => {
-    if (selected.includes(courseId)) {
-      onChange(selected.filter((id) => id !== courseId));
-    } else {
-      onChange([...selected, courseId]);
-    }
+    toggleCourse(courseId);
     
-    // Refocus the search input after course selection
     setTimeout(() => {
       searchInputRef.current?.focus();
     }, 0);
   };
 
   const clearAll = () => {
-    onChange([]);
+    clearCourses();
   };
 
   return (
@@ -53,7 +38,7 @@ export default function CourseSelector({ selected, onChange }: Props) {
             <p className="text-sm text-muted-foreground">Choose courses for your personalized timetable</p>
           </div>
         </div>
-        {selected.length > 0 && (
+        {selectedCourses.length > 0 && (
           <button
             onClick={clearAll}
             className="text-sm text-muted-foreground hover:text-destructive transition-colors flex items-center space-x-1"
@@ -79,16 +64,16 @@ export default function CourseSelector({ selected, onChange }: Props) {
       </div>
 
       {/* Selected Courses Pills */}
-      {selected.length > 0 && (
+      {selectedCourses.length > 0 && (
         <div className="mb-6">
           <div className="flex items-center justify-between mb-3">
             <h3 className="text-sm font-medium text-card-foreground">
-              Selected Courses ({selected.length})
+              Selected Courses ({selectedCourses.length})
             </h3>
             
           </div>
           <div className="flex flex-wrap gap-2">
-            {selected.map((courseId) => (
+            {selectedCourses.map((courseId) => (
               <div
                 key={courseId}
                 className="group inline-flex items-center px-3 py-2 bg-primary text-primary-foreground text-sm rounded-full font-medium transition-all hover:bg-primary/90"
@@ -111,10 +96,14 @@ export default function CourseSelector({ selected, onChange }: Props) {
       )}
 
       {/* Course Grid */}
-      <div className={`transition-all duration-300 ${isExpanded || filter || selected.length === 0 ? 'max-h-80' : 'max-h-0'} overflow-hidden`}>
-        <div className="grid px-1 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-h-80 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-border scrollbar-track-transparent">
+      <div className={`transition-all duration-300 ${isExpanded || hasFilter || selectedCourses.length === 0 ? `max-h-80` : 'max-h-0'} overflow-hidden`}>
+        <div className=
+        {`
+          grid px-1 grid-cols-1 sm:grid-cols-1 lg:grid-cols-4 gap-3 
+          max-h-80 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-border scrollbar-track-transparent
+        `}>
           {filteredCourses.map(({ courseId, courseName }) => {
-            const isSelected = selected.includes(courseId);
+            const isSelected = selectedCourses.includes(courseId);
             return (
               <div
                 key={courseId}
@@ -156,7 +145,7 @@ export default function CourseSelector({ selected, onChange }: Props) {
       </div>
 
       {/* Toggle Button */}
-      {!filter && selected.length > 0 && (
+      {!hasFilter && selectedCourses.length > 0 && (
         <div className="mt-4 text-center">
           <button
             onClick={() => setIsExpanded(!isExpanded)}
@@ -168,7 +157,7 @@ export default function CourseSelector({ selected, onChange }: Props) {
       )}
 
       {/* Empty State */}
-      {filteredCourses.length === 0 && filter && (
+      {filteredCourses.length === 0 && hasFilter && (
         <div className="text-center py-8 text-muted-foreground">
           <Search className="w-8 h-8 mx-auto mb-2 opacity-50" />
           <p>No courses found matching "{filter}"</p>

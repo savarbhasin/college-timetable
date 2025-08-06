@@ -1,11 +1,7 @@
-'use client';
-import { useState } from 'react';
-import CourseSelector from '../components/CourseSelector';
-import Timetable from '../components/Timetable';
+import CourseSelector from '@/components/CourseSelector';
+import Timetable from '@/components/Timetable';
 
 export default function Home() {
-  const [selectedCourses, setSelectedCourses] = useState<string[]>([]);
-
   return (
     <div className="space-y-6">
       <div className="text-center mb-8">
@@ -20,8 +16,8 @@ export default function Home() {
         </p>
       </div>
       
-      <CourseSelector selected={selectedCourses} onChange={setSelectedCourses} />
-      <Timetable selected={selectedCourses} />
+      <CourseSelector />
+      <Timetable />
     </div>
   );
 }
