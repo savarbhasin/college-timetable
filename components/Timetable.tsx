@@ -50,23 +50,19 @@ export default function Timetable({ selected }: Props) {
   const downloadAsImage = async () => {
     if (!timetableRef.current) return;
 
-    const tableElement = timetableRef.current.querySelector('table');
-    if (!tableElement) return;
-
     try {
-      const html2canvas = (await import('html2canvas')).default;
-      const canvas = await html2canvas(tableElement, {
+      // @ts-ignore
+      const { toPng } = await import('html-to-image');
+
+      const dataUrl = await toPng(timetableRef.current, {
         backgroundColor: '#0f172a',
-        scale: 2,
-        useCORS: true,
-        onclone: (clonedDoc) => {
-          clonedDoc.documentElement.classList.add('dark');
-        },
+        pixelRatio: 2,
+        cacheBust: true,
       });
 
       const link = document.createElement('a');
       link.download = `timetable-${new Date().toISOString().split('T')[0]}.png`;
-      link.href = canvas.toDataURL('image/png', 1.0);
+      link.href = dataUrl;
       link.click();
     } catch (error) {
       console.error('Error generating image:', error);
@@ -76,33 +72,29 @@ export default function Timetable({ selected }: Props) {
   const downloadAsPDF = async () => {
     if (!timetableRef.current) return;
 
-    const tableElement = timetableRef.current.querySelector('table');
-    if (!tableElement) return;
-
     try {
-      const html2canvas = (await import('html2canvas')).default;
+      // @ts-ignore
+      const { toPng } = await import('html-to-image');
       const jsPDF = (await import('jspdf')).jsPDF;
 
-      const canvas = await html2canvas(tableElement, {
+      const dataUrl = await toPng(timetableRef.current, {
         backgroundColor: '#0f172a',
-        scale: 2,
-        useCORS: true,
-        onclone: (clonedDoc) => {
-          clonedDoc.documentElement.classList.add('dark');
-        },
+        pixelRatio: 2,
+        cacheBust: true,
       });
 
-      const imgData = canvas.toDataURL('image/png', 1.0);
       const pdf = new jsPDF({
         orientation: 'landscape',
         unit: 'mm',
         format: 'a4',
       });
 
-      const imgWidth = 297; // A4 landscape width
-      const imgHeight = (canvas.height * imgWidth) / canvas.width;
+      // Fit width of A4 landscape (297mm)
+      const rect = timetableRef.current.getBoundingClientRect();
+      const imgWidth = 297;
+      const imgHeight = (rect.height * imgWidth) / rect.width;
 
-      pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
+      pdf.addImage(dataUrl, 'PNG', 0, 0, imgWidth, imgHeight);
       pdf.save(`timetable-${new Date().toISOString().split('T')[0]}.pdf`);
     } catch (error) {
       console.error('Error generating PDF:', error);
@@ -117,25 +109,25 @@ export default function Timetable({ selected }: Props) {
   
   const renderCellContent = (entries: TimetableEntry[], day: string, slot: string) => {
     if (entries.length === 0) {
-      return <div className="h-10 flex items-center justify-center text-muted-foreground text-xs"></div>;
+      return <div className="h-12 flex items-center justify-center text-muted-foreground text-xs"></div>;
     }
 
     return (
-      <div className="space-y-1 p-1 h-full min-h-10">
+      <div className="flex flex-col gap-1 p-2 h-full min-h-16">
         {entries.map(({ courseId, classroom, classType }) => (
           <div
             key={`${day}-${slot}-${courseId}`}
             className={`
               ${generateCourseColor(courseId)}
-              border rounded px-1 py-0.5 text-xs font-medium
-              transition-all hover:scale-105 h-full flex flex-col justify-center items-center text-center
-              max-w-full overflow-hidden
+              border rounded px-2 py-1 text-xs font-medium
+              transition-all hover:scale-105 flex flex-col items-center text-center
+              max-w-full
             `}
           >
-            <div className="font-semibold text-xs leading-tight truncate w-full">{courseId}</div>
-            <div className="text-[10px] opacity-80 leading-tight truncate w-full">{classroom}</div>
+            <div className="font-semibold text-xs leading-tight w-full break-words">{courseId}</div>
+            <div className="text-xs opacity-80 leading-tight w-full break-words">{classroom}</div>
             {classType !== 'class' && (
-              <div className="text-[10px] opacity-60 uppercase leading-tight truncate w-full">{classType}</div>
+              <div className="text-xs opacity-60 uppercase leading-tight w-full break-words">{classType}</div>
             )}
           </div>
         ))}
@@ -169,13 +161,13 @@ export default function Timetable({ selected }: Props) {
               <Image className="w-4 h-4" />
               <span>PNG</span>
             </button>
-            <button
+            {/* <button
               onClick={downloadAsPDF}
               className="flex items-center space-x-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
             >
               <FileText className="w-4 h-4" />
               <span>PDF</span>
-            </button>
+            </button> */}
           </div>
         )}
       </div>
@@ -236,7 +228,7 @@ export default function Timetable({ selected }: Props) {
                   <td
                     key={`${day}-${currentSlot}`}
                     colSpan={colSpan}
-                    className="align-top"
+                    className="align-top min-h-16 p-0"
                   >
                     {renderCellContent(currentEntries, day, currentSlot)}
                   </td>
