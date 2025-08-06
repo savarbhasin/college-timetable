@@ -1,7 +1,7 @@
 'use client';
 import { useRef } from 'react';
 import { Download, Image, FileText } from 'lucide-react';
-import timetableData from '../class.json';
+import timetableData from '../merged.json';
 
 interface TimetableEntry {
   courseId: string;
@@ -172,7 +172,7 @@ export default function Timetable({ selected }: Props) {
         )}
       </div>
       
-      <div ref={timetableRef} className="overflow-x-auto rounded-xl">
+      {selected.length > 0 && <div ref={timetableRef} className="overflow-x-auto rounded-xl">
         <table className="w-full border-collapse border-spacing-0">
           <thead>
             <tr>
@@ -247,7 +247,7 @@ export default function Timetable({ selected }: Props) {
             })}
           </tbody>
         </table>
-      </div>
+      </div>}
       
       {selected.length === 0 && (
         <div className="text-center py-12 text-muted-foreground">
