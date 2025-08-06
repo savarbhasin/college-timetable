@@ -173,21 +173,30 @@ export default function Timetable({ selected }: Props) {
         )}
       </div>
       
-      {selected.length > 0 && <div ref={timetableRef} className="overflow-x-auto rounded-xl">
+      {selected.length > 0 && <div ref={timetableRef} className="overflow-x-auto rounded-md">
         <table className="w-full border-collapse border-spacing-0">
           <thead>
             <tr>
               <th className="bg-muted text-muted-foreground font-medium p-2 text-left w-16">
                 Day
               </th>
-              {timeSlots.map((slot) => (
+              {timeSlots.map((slot) => {
+              const [start, end] = slot.split("-");
+              const startDisplay = start.endsWith(":00") ? start.split(":")[0] : start;
+              const endDisplay = end.endsWith(":00") ? end.split(":")[0] : end;
+              const displaySlot = `${startDisplay}-${endDisplay}`;
+              
+              return (
                 <th
                   key={slot}
                   className="bg-muted text-muted-foreground font-medium p-1 text-center w-20"
                 >
-                  <div className="text-[6px] leading-tight">{slot}</div>
+                  <div className="text-[9px] leading-tight">{displaySlot}</div>
                 </th>
-              ))}
+              );
+            })}
+
+
             </tr>
           </thead>
           <tbody>
