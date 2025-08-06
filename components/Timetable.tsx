@@ -307,7 +307,7 @@ export default function Timetable({ selected }: Props) {
         </div>
         
         {selected.length > 0 && (
-          <div className="flex space-x-2 mt-2">
+          <div className="flex space-x-2 mt-2 md:mt-0">
             <button
               onClick={downloadAsImage}
               className="flex items-center space-x-2 px-4 py-2 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/80 transition-colors text-sm font-medium"
