@@ -47,6 +47,7 @@ interface Props {
 export default function Timetable({ selected }: Props) {
   const timetableRef = useRef<HTMLDivElement>(null);
 
+  // Download timetable as JPEG at full, natural width regardless of viewport size
   const downloadAsImage = async () => {
     if (!timetableRef.current) return;
 
@@ -54,37 +55,46 @@ export default function Timetable({ selected }: Props) {
     if (!tableElement) return;
 
     try {
-      // @ts-ignore
+      // @ts-ignore – html-to-image has no official types
       const { toJpeg } = await import('html-to-image');
 
-    
+      // Clone the table into an off-screen container so it renders at full width
+      const tempWrapper = document.createElement('div');
+      tempWrapper.style.position = 'absolute';
+      tempWrapper.style.left = '-9999px';
+      tempWrapper.style.top = '0';
+      tempWrapper.style.backgroundColor = '#0f172a';
 
-      const dataUrl = await toJpeg(tableElement, {
-        backgroundColor: '#0f172a',
+      const clonedTable = tableElement.cloneNode(true) as HTMLElement;
+      tempWrapper.appendChild(clonedTable);
+      document.body.appendChild(tempWrapper);
+
+      // Wait a tick so the browser can lay out the clone
+      await new Promise((r) => requestAnimationFrame(r));
+
+      const width = clonedTable.scrollWidth;
+      const height = clonedTable.scrollHeight;
+
+      const dataUrl = await toJpeg(clonedTable, {
         pixelRatio: 2,
-        cacheBust: true,
         quality: 0.95,
-        width: 1200,
+        width,
+        height,
         style: {
-          transform: 'scale(1)',
-          transformOrigin: 'top left',
-        }
+          width: `${width}px`,
+          height: `${height}px`,
+        },
       });
-
 
       const link = document.createElement('a');
       link.download = `timetable-${new Date().toISOString().split('T')[0]}.jpg`;
       link.href = dataUrl;
       link.click();
+
+      // Clean up
+      document.body.removeChild(tempWrapper);
     } catch (error) {
       console.error('Error generating image:', error);
-      
-      // Ensure styles are restored even if there's an error
-      if (tableElement) {
-        tableElement.style.width = '';
-        tableElement.style.minWidth = '';
-        document.documentElement.style.fontSize = '';
-      }
     }
   };
 
