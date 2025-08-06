@@ -100,7 +100,6 @@
   { "courseId": "ELD", "courseName": "Embedded Logic Design" },
   { "courseId": "OS-A", "courseName": "Operating Systems - Section A" },
   { "courseId": "OS-B", "courseName": "Operating Systems - Section B" },
-  { "courseId": "SOE", "courseName": "Software Engineering" },
   { "courseId": "RA-I", "courseName": "Real Analysis - I" },
   { "courseId": "FOE", "courseName": "Foundations of Entrepreneurship" },
   { "courseId": "RMSSD", "courseName": "Research Methods in Social Sciences and Design" },
