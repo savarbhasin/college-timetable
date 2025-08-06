@@ -94,5 +94,6 @@
   { "courseId": "US", "courseName": "Urban Sociology" },
   { "courseId": "USs", "courseName": "Usable Security and Privacy" },
   { "courseId": "VDF", "courseName": "VLSI Design Flow" },
-  { "courseId": "WSI", "courseName": "Wireless System Implementation" }
+  { "courseId": "WSI", "courseName": "Wireless System Implementation" },
+  { "courseId": "IQB", "courseName": "Introduction to Quantum Biology" }
 ]

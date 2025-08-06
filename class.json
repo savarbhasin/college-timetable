@@ -211,7 +211,8 @@
       { "courseId": "FF", "classroom": "C102", "classType": "class" },
       { "courseId": "FOE", "classroom": "C212", "classType": "class" },
       { "courseId": "TNT", "classroom": "C13", "classType": "class" },
-      { "courseId": "IDUDA", "classroom": "C03", "classType": "class" }
+      { "courseId": "IDUDA", "classroom": "C03", "classType": "class" },
+      { "courseId": "IQB", "classroom": "A006", "classType": "class" }
     ],
     "11:30-12:00": [
       { "courseId": "CGAS", "classroom": "C02", "classType": "class" },
@@ -223,6 +224,7 @@
       { "courseId": "FF", "classroom": "C102", "classType": "class" },
       { "courseId": "FOE", "classroom": "C212", "classType": "class" },
       { "courseId": "TNT", "classroom": "C13", "classType": "class" },
+      { "courseId": "IQB", "classroom": "A006", "classType": "class" },
       { "courseId": "IDUDA", "classroom": "C03", "classType": "class" }
     ],
     "12:00-12:30": [
@@ -235,7 +237,8 @@
       { "courseId": "FF", "classroom": "C102", "classType": "class" },
       { "courseId": "FOE", "classroom": "C212", "classType": "class" },
       { "courseId": "TNT", "classroom": "C13", "classType": "class" },
-      { "courseId": "IDUDA", "classroom": "C03", "classType": "class" }
+      { "courseId": "IDUDA", "classroom": "C03", "classType": "class" },
+      { "courseId": "IQB", "classroom": "A006", "classType": "class" }
     ],
     "12:30-1:00": [
       { "courseId": "CN-Sec-A", "classroom": "C01", "classType": "tut" },
@@ -512,7 +515,9 @@
   "Thursday": {
     "8:00-8:30": [],
     "8:30-9:00": [],
-    "9:00-9:30": [],
+    "9:00-9:30": [
+        { "courseId": "IQB", "classroom": "L321", "classType": "lab" }
+    ],
     "9:30-10:00": [
       { "courseId": "CoMeG", "classroom": "C03", "classType": "class" },
       { "courseId": "AI Sec A", "classroom": "C102", "classType": "class" },
@@ -523,7 +528,8 @@
       { "courseId": "QM", "classroom": "C11", "classType": "class" },
       { "courseId": "MPT", "classroom": "C24", "classType": "class" },
       { "courseId": "AERM", "classroom": "C211", "classType": "class" },
-      { "courseId": "US", "classroom": "A106", "classType": "class" }
+      { "courseId": "US", "classroom": "A106", "classType": "class" },
+      { "courseId": "IQB", "classroom": "L321", "classType": "lab" }
     ],
     "10:00-10:30": [
       { "courseId": "CoMeG", "classroom": "C03", "classType": "class" },
@@ -535,7 +541,8 @@
       { "courseId": "QM", "classroom": "C11", "classType": "class" },
       { "courseId": "MPT", "classroom": "C24", "classType": "class" },
       { "courseId": "AERM", "classroom": "C211", "classType": "class" },
-      { "courseId": "US", "classroom": "A106", "classType": "class" }
+      { "courseId": "US", "classroom": "A106", "classType": "class" },
+      { "courseId": "IQB", "classroom": "L321", "classType": "lab" }
     ],
     "10:30-11:00": [
       { "courseId": "CoMeG", "classroom": "C03", "classType": "class" },
@@ -547,7 +554,8 @@
       { "courseId": "QM", "classroom": "C11", "classType": "class" },
       { "courseId": "MPT", "classroom": "C24", "classType": "class" },
       { "courseId": "AERM", "classroom": "C211", "classType": "class" },
-      { "courseId": "US", "classroom": "A106", "classType": "class" }
+      { "courseId": "US", "classroom": "A106", "classType": "class" },
+      { "courseId": "IQB", "classroom": "L321", "classType": "lab" }
     ],
     "11:00-11:30": [
       { "courseId": "BioP", "classroom": "C01", "classType": "class" },
@@ -726,7 +734,8 @@
       { "courseId": "FF", "classroom": "C102", "classType": "class" },
       { "courseId": "FOE", "classroom": "C212", "classType": "class" },
       { "courseId": "TNT", "classroom": "C13", "classType": "class" },
-      { "courseId": "IDUDA", "classroom": "C03", "classType": "class" }
+      { "courseId": "IDUDA", "classroom": "C03", "classType": "class" },
+      { "courseId": "IQB", "classroom": "A006", "classType": "class" }
     ],
     "11:30-12:00": [
       { "courseId": "CGAS", "classroom": "C02", "classType": "class" },
@@ -738,7 +747,8 @@
       { "courseId": "FF", "classroom": "C102", "classType": "class" },
       { "courseId": "FOE", "classroom": "C212", "classType": "class" },
       { "courseId": "TNT", "classroom": "C13", "classType": "class" },
-      { "courseId": "IDUDA", "classroom": "C03", "classType": "class" }
+      { "courseId": "IDUDA", "classroom": "C03", "classType": "class" },
+      { "courseId": "IQB", "classroom": "A006", "classType": "class" }
     ],
     "12:00-12:30": [
       { "courseId": "CGAS", "classroom": "C02", "classType": "class" },
@@ -750,7 +760,8 @@
       { "courseId": "FF", "classroom": "C102", "classType": "class" },
       { "courseId": "FOE", "classroom": "C212", "classType": "class" },
       { "courseId": "TNT", "classroom": "C13", "classType": "class" },
-      { "courseId": "IDUDA", "classroom": "C03", "classType": "class" }
+      { "courseId": "IDUDA", "classroom": "C03", "classType": "class" },
+      { "courseId": "IQB", "classroom": "A006", "classType": "class" }
     ],
     "12:30-1:00": [
       { "courseId": "CG", "classroom": "A106", "classType": "lab" }
