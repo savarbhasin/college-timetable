@@ -344,14 +344,14 @@ export default function Timetable({ selected }: Props) {
               const [start, end] = slot.split("-");
               const startDisplay = start.endsWith(":00") ? start.split(":")[0] : start;
               const endDisplay = end.endsWith(":00") ? end.split(":")[0] : end;
-              const displaySlot = `${startDisplay}-${endDisplay}`;
+              const displaySlot = `${startDisplay}`;
               
               return (
                 <th
                   key={slot}
                   className="bg-muted text-muted-foreground font-medium p-1 text-center w-20"
                 >
-                  <div className="text-[9px] leading-tight">{displaySlot}</div>
+                  <div className="text-[12px] leading-tight font-bold">{displaySlot}</div>
                 </th>
               );
             })}
