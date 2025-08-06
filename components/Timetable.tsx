@@ -52,16 +52,17 @@ export default function Timetable({ selected }: Props) {
 
     try {
       // @ts-ignore
-      const { toPng } = await import('html-to-image');
+      const { toJpeg } = await import('html-to-image');
 
-      const dataUrl = await toPng(timetableRef.current, {
+      const dataUrl = await toJpeg(timetableRef.current, {
         backgroundColor: '#0f172a',
         pixelRatio: 2,
         cacheBust: true,
+        quality: 0.95,
       });
 
       const link = document.createElement('a');
-      link.download = `timetable-${new Date().toISOString().split('T')[0]}.png`;
+      link.download = `timetable-${new Date().toISOString().split('T')[0]}.jpg`;
       link.href = dataUrl;
       link.click();
     } catch (error) {
@@ -159,7 +160,7 @@ export default function Timetable({ selected }: Props) {
               className="flex items-center space-x-2 px-4 py-2 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/80 transition-colors text-sm font-medium"
             >
               <Image className="w-4 h-4" />
-              <span>PNG</span>
+              <span>JPEG</span>
             </button>
             {/* <button
               onClick={downloadAsPDF}
