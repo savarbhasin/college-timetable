@@ -291,7 +291,7 @@ export default function Timetable({ selected }: Props) {
 
   return (
     <div className="bg-card border rounded-xl p-6 shadow-lg">
-      <div className="flex items-center justify-between mb-6">
+      <div className="flex flex-col md:flex-row items-center justify-between mb-6">
         <div>
           <h2 className="text-xl font-semibold text-card-foreground">
             Your Timetable
@@ -307,7 +307,7 @@ export default function Timetable({ selected }: Props) {
         </div>
         
         {selected.length > 0 && (
-          <div className="flex space-x-2">
+          <div className="flex space-x-2 mt-2">
             <button
               onClick={downloadAsImage}
               className="flex items-center space-x-2 px-4 py-2 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/80 transition-colors text-sm font-medium"
