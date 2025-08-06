@@ -1,0 +1,769 @@
+
+{
+  "Monday": {
+    "8:00-8:30": [],
+    "8:30-9:00": [],
+    "9:00-9:30": [],
+    "9:30-10:00": [
+      { "courseId": "MLBA", "classroom": "A106", "classType": "class" },
+      { "courseId": "CN-Sec-A", "classroom": "C11", "classType": "class" },
+      { "courseId": "CN-Sec-B", "classroom": "C21", "classType": "class" },
+      { "courseId": "RL", "classroom": "B002", "classType": "class" },
+      { "courseId": "ADL", "classroom": "C24", "classType": "class" },
+      { "courseId": "RA-II", "classroom": "C208", "classType": "class" },
+      { "courseId": "DSNT", "classroom": "B001", "classType": "class" },
+      { "courseId": "NDM", "classroom": "B105", "classType": "class" },
+      { "courseId": "TE", "classroom": "C12", "classType": "class" },
+      { "courseId": "IIA", "classroom": "A007", "classType": "class" }
+    ],
+    "10:00-10:30": [
+      { "courseId": "MLBA", "classroom": "A106", "classType": "class" },
+      { "courseId": "CN-Sec-A", "classroom": "C11", "classType": "class" },
+      { "courseId": "CN-Sec-B", "classroom": "C21", "classType": "class" },
+      { "courseId": "RL", "classroom": "B002", "classType": "class" },
+      { "courseId": "ADL", "classroom": "C24", "classType": "class" },
+      { "courseId": "RA-II", "classroom": "C208", "classType": "class" },
+      { "courseId": "DSNT", "classroom": "B001", "classType": "class" },
+      { "courseId": "NDM", "classroom": "B105", "classType": "class" },
+      { "courseId": "TE", "classroom": "C12", "classType": "class" },
+      { "courseId": "IIA", "classroom": "A007", "classType": "class" }
+    ],
+    "10:30-11:00": [
+      { "courseId": "MLBA", "classroom": "A106", "classType": "class" },
+      { "courseId": "CN-Sec-A", "classroom": "C11", "classType": "class" },
+      { "courseId": "CN-Sec-B", "classroom": "C21", "classType": "class" },
+      { "courseId": "RL", "classroom": "B002", "classType": "class" },
+      { "courseId": "ADL", "classroom": "C24", "classType": "class" },
+      { "courseId": "RA-II", "classroom": "C208", "classType": "class" },
+      { "courseId": "DSNT", "classroom": "B001", "classType": "class" },
+      { "courseId": "NDM", "classroom": "B105", "classType": "class" },
+      { "courseId": "TE", "classroom": "C12", "classType": "class" },
+      { "courseId": "IIA", "classroom": "A007", "classType": "class" }
+    ],
+    "11:00-11:30": [
+      { "courseId": "BioP", "classroom": "C01", "classType": "class" },
+      { "courseId": "RI", "classroom": "C213", "classType": "class" },
+      { "courseId": "ERI", "classroom": "C22", "classType": "class" },
+      { "courseId": "BML", "classroom": "C24", "classType": "class" },
+      { "courseId": "QMD", "classroom": "C208", "classType": "class" },
+      { "courseId": "PMC", "classroom": "C214", "classType": "class" },
+      { "courseId": "ETB", "classroom": "C210", "classType": "class" },
+      { "courseId": "ME", "classroom": "C21", "classType": "class" },
+      { "courseId": "PCB (CB)", "classroom": "C209", "classType": "class" },
+      { "courseId": "MG", "classroom": "C211", "classType": "class" }
+    ],
+    "11:30-12:00": [
+      { "courseId": "BioP", "classroom": "C01", "classType": "class" },
+      { "courseId": "RI", "classroom": "C213", "classType": "class" },
+      { "courseId": "ERI", "classroom": "C22", "classType": "class" },
+      { "courseId": "BML", "classroom": "C24", "classType": "class" },
+      { "courseId": "QMD", "classroom": "C208", "classType": "class" },
+      { "courseId": "PMC", "classroom": "C214", "classType": "class" },
+      { "courseId": "ETB", "classroom": "C210", "classType": "class" },
+      { "courseId": "ME", "classroom": "C21", "classType": "class" },
+      { "courseId": "PCB (CB)", "classroom": "C209", "classType": "class" },
+      { "courseId": "MG", "classroom": "C211", "classType": "class" }
+    ],
+    "12:00-12:30": [
+      { "courseId": "BioP", "classroom": "C01", "classType": "class" },
+      { "courseId": "RI", "classroom": "C213", "classType": "class" },
+      { "courseId": "ERI", "classroom": "C22", "classType": "class" },
+      { "courseId": "BML", "classroom": "C24", "classType": "class" },
+      { "courseId": "QMD", "classroom": "C208", "classType": "class" },
+      { "courseId": "PMC", "classroom": "C214", "classType": "class" },
+      { "courseId": "ETB", "classroom": "C210", "classType": "class" },
+      { "courseId": "ME", "classroom": "C21", "classType": "class" },
+      { "courseId": "PCB (CB)", "classroom": "C209", "classType": "class" },
+      { "courseId": "MG", "classroom": "C211", "classType": "class" }
+    ],
+    "12:30-1:00": [],
+    "1:00-1:30": [],
+    "1:30-2:00": [],
+    "2:00-2:30": [],
+    "2:30-3:00": [
+      { "courseId": "CBB", "classroom": "C03", "classType": "class" },
+      { "courseId": "GA", "classroom": "C11", "classType": "class" },
+      { "courseId": "3DAF", "classroom": "B407", "classType": "class" },
+      { "courseId": "DVD", "classroom": "C21", "classType": "class" },
+      { "courseId": "AV", "classroom": "C209", "classType": "class" },
+      { "courseId": "WSI", "classroom": "C22", "classType": "class" },
+      { "courseId": "DSc", "classroom": "C11", "classType": "class" },
+      { "courseId": "GMT", "classroom": "B105", "classType": "class" },
+      { "courseId": "SGCCI", "classroom": "C211", "classType": "class" },
+      { "courseId": "AE", "classroom": "C208", "classType": "class" }
+    ],
+    "3:00-3:30": [
+      { "courseId": "CBB", "classroom": "C03", "classType": "class" },
+      { "courseId": "GA", "classroom": "C11", "classType": "class" },
+      { "courseId": "3DAF", "classroom": "B407", "classType": "class" },
+      { "courseId": "DVD", "classroom": "C21", "classType": "class" },
+      { "courseId": "AV", "classroom": "C209", "classType": "class" },
+      { "courseId": "WSI", "classroom": "C22", "classType": "class" },
+      { "courseId": "DSc", "classroom": "C11", "classType": "class" },
+      { "courseId": "GMT", "classroom": "B105", "classType": "class" },
+      { "courseId": "SGCCI", "classroom": "C211", "classType": "class" },
+      { "courseId": "AE", "classroom": "C208", "classType": "class" }
+    ],
+    "3:30-4:00": [
+      { "courseId": "CBB", "classroom": "C03", "classType": "class" },
+      { "courseId": "GA", "classroom": "C11", "classType": "class" },
+      { "courseId": "3DAF", "classroom": "B407", "classType": "class" },
+      { "courseId": "DVD", "classroom": "C21", "classType": "class" },
+      { "courseId": "AV", "classroom": "C209", "classType": "class" },
+      { "courseId": "WSI", "classroom": "C22", "classType": "class" },
+      { "courseId": "DSc", "classroom": "C11", "classType": "class" },
+      { "courseId": "GMT", "classroom": "B105", "classType": "class" },
+      { "courseId": "SGCCI", "classroom": "C211", "classType": "class" },
+      { "courseId": "AE", "classroom": "C208", "classType": "class" }
+    ],
+    "4:00-4:30": [
+      { "courseId": "FOMB", "classroom": "C210", "classType": "class" },
+      { "courseId": "DTI", "classroom": "C03", "classType": "class" },
+      { "courseId": "UDXR", "classroom": "C22", "classType": "class" },
+      { "courseId": "DSP", "classroom": "A106", "classType": "class" },
+      { "courseId": "VDF", "classroom": "C11", "classType": "class" },
+      { "courseId": "CmpA", "classroom": "C213", "classType": "class" },
+      { "courseId": "KCPT", "classroom": "C23", "classType": "class" },
+      { "courseId": "BEco", "classroom": "C214", "classType": "class" },
+      { "courseId": "SoE", "classroom": "C02", "classType": "class" },
+      { "courseId": "IFT", "classroom": "C24", "classType": "class" }
+    ],
+    "4:30-5:00": [
+      { "courseId": "FOMB", "classroom": "C210", "classType": "class" },
+      { "courseId": "DTI", "classroom": "C03", "classType": "class" },
+      { "courseId": "UDXR", "classroom": "C22", "classType": "class" },
+      { "courseId": "DSP", "classroom": "A106", "classType": "class" },
+      { "courseId": "VDF", "classroom": "C11", "classType": "class" },
+      { "courseId": "CmpA", "classroom": "C213", "classType": "class" },
+      { "courseId": "KCPT", "classroom": "C23", "classType": "class" },
+      { "courseId": "BEco", "classroom": "C214", "classType": "class" },
+      { "courseId": "SoE", "classroom": "C02", "classType": "class" },
+      { "courseId": "IFT", "classroom": "C24", "classType": "class" }
+    ],
+    "5:00-5:30": [
+      { "courseId": "FOMB", "classroom": "C210", "classType": "class" },
+      { "courseId": "DTI", "classroom": "C03", "classType": "class" },
+      { "courseId": "UDXR", "classroom": "C22", "classType": "class" },
+      { "courseId": "DSP", "classroom": "A106", "classType": "class" },
+      { "courseId": "VDF", "classroom": "C11", "classType": "class" },
+      { "courseId": "CmpA", "classroom": "C213", "classType": "class" },
+      { "courseId": "KCPT", "classroom": "C23", "classType": "class" },
+      { "courseId": "BEco", "classroom": "C214", "classType": "class" },
+      { "courseId": "SoE", "classroom": "C02", "classType": "class" },
+      { "courseId": "IFT", "classroom": "C24", "classType": "class" }
+    ],
+    "5:30-6:00": [
+      { "courseId": "OOPD", "classroom": "C101", "classType": "class" }
+    ],
+    "6:00-6:30": [
+      { "courseId": "OOPD", "classroom": "C101", "classType": "class" }
+    ],
+    "6:30-7:00": [
+      { "courseId": "OOPD", "classroom": "C101", "classType": "class" }
+    ],
+    "7:00-7:30": []
+  },
+  "Tuesday": {
+    "8:00-8:30": [],
+    "8:30-9:00": [],
+    "9:00-9:30": [],
+    "9:30-10:00": [
+      { "courseId": "CoMeG", "classroom": "C03", "classType": "class" },
+      { "courseId": "AI Sec A", "classroom": "C102", "classType": "class" },
+      { "courseId": "CDA", "classroom": "C13", "classType": "class" },
+      { "courseId": "AI Sec B", "classroom": "C02", "classType": "class" },
+      { "courseId": "MDG", "classroom": "B407", "classType": "class" },
+      { "courseId": "LST", "classroom": "C210", "classType": "class" },
+      { "courseId": "QM", "classroom": "C11", "classType": "class" },
+      { "courseId": "MPT", "classroom": "C24", "classType": "class" },
+      { "courseId": "AERM", "classroom": "C211", "classType": "class" },
+      { "courseId": "US", "classroom": "A106", "classType": "class" }
+    ],
+    "10:00-10:30": [
+      { "courseId": "CoMeG", "classroom": "C03", "classType": "class" },
+      { "courseId": "AI Sec A", "classroom": "C102", "classType": "class" },
+      { "courseId": "CDA", "classroom": "C13", "classType": "class" },
+      { "courseId": "AI Sec B", "classroom": "C02", "classType": "class" },
+      { "courseId": "MDG", "classroom": "B407", "classType": "class" },
+      { "courseId": "LST", "classroom": "C210", "classType": "class" },
+      { "courseId": "QM", "classroom": "C11", "classType": "class" },
+      { "courseId": "MPT", "classroom": "C24", "classType": "class" },
+      { "courseId": "AERM", "classroom": "C211", "classType": "class" },
+      { "courseId": "US", "classroom": "A106", "classType": "class" }
+    ],
+    "10:30-11:00": [
+      { "courseId": "CoMeG", "classroom": "C03", "classType": "class" },
+      { "courseId": "AI Sec A", "classroom": "C102", "classType": "class" },
+      { "courseId": "CDA", "classroom": "C13", "classType": "class" },
+      { "courseId": "AI Sec B", "classroom": "C02", "classType": "class" },
+      { "courseId": "MDG", "classroom": "B407", "classType": "class" },
+      { "courseId": "LST", "classroom": "C210", "classType": "class" },
+      { "courseId": "QM", "classroom": "C11", "classType": "class" },
+      { "courseId": "MPT", "classroom": "C24", "classType": "class" },
+      { "courseId": "AERM", "classroom": "C211", "classType": "class" },
+      { "courseId": "US", "classroom": "A106", "classType": "class" }
+    ],
+    "11:00-11:30": [
+      { "courseId": "CGAS", "classroom": "C02", "classType": "class" },
+      { "courseId": "IFA", "classroom": "C24", "classType": "class" },
+      { "courseId": "MAD", "classroom": "C214", "classType": "class" },
+      { "courseId": "CMOS", "classroom": "C01", "classType": "class" },
+      { "courseId": "ADC", "classroom": "C213", "classType": "class" },
+      { "courseId": "SC", "classroom": "C21", "classType": "class" },
+      { "courseId": "FF", "classroom": "C102", "classType": "class" },
+      { "courseId": "FOE", "classroom": "C212", "classType": "class" },
+      { "courseId": "TNT", "classroom": "C13", "classType": "class" },
+      { "courseId": "IDUDA", "classroom": "C03", "classType": "class" }
+    ],
+    "11:30-12:00": [
+      { "courseId": "CGAS", "classroom": "C02", "classType": "class" },
+      { "courseId": "IFA", "classroom": "C24", "classType": "class" },
+      { "courseId": "MAD", "classroom": "C214", "classType": "class" },
+      { "courseId": "CMOS", "classroom": "C01", "classType": "class" },
+      { "courseId": "ADC", "classroom": "C213", "classType": "class" },
+      { "courseId": "SC", "classroom": "C21", "classType": "class" },
+      { "courseId": "FF", "classroom": "C102", "classType": "class" },
+      { "courseId": "FOE", "classroom": "C212", "classType": "class" },
+      { "courseId": "TNT", "classroom": "C13", "classType": "class" },
+      { "courseId": "IDUDA", "classroom": "C03", "classType": "class" }
+    ],
+    "12:00-12:30": [
+      { "courseId": "CGAS", "classroom": "C02", "classType": "class" },
+      { "courseId": "IFA", "classroom": "C24", "classType": "class" },
+      { "courseId": "MAD", "classroom": "C214", "classType": "class" },
+      { "courseId": "CMOS", "classroom": "C01", "classType": "class" },
+      { "courseId": "ADC", "classroom": "C213", "classType": "class" },
+      { "courseId": "SC", "classroom": "C21", "classType": "class" },
+      { "courseId": "FF", "classroom": "C102", "classType": "class" },
+      { "courseId": "FOE", "classroom": "C212", "classType": "class" },
+      { "courseId": "TNT", "classroom": "C13", "classType": "class" },
+      { "courseId": "IDUDA", "classroom": "C03", "classType": "class" }
+    ],
+    "12:30-1:00": [
+      { "courseId": "CN", "classroom": "C01, C11", "classType": "tut" }
+    ],
+    "1:00-1:30": [
+      { "courseId": "CN", "classroom": "C01, C11", "classType": "tut" }
+    ],
+    "1:30-2:00": [
+      { "courseId": "GA", "classroom": "C11", "classType": "tut" }
+    ],
+    "2:00-2:30": [
+      { "courseId": "GA", "classroom": "C11", "classType": "tut" }
+    ],
+    "2:30-3:00": [
+      { "courseId": "GA", "classroom": "C11", "classType": "tut" }
+    ],
+    "3:00-3:30": [
+      { "courseId": "CM", "classroom": "C11", "classType": "class" },
+      { "courseId": "CG", "classroom": "A007", "classType": "class" },
+      { "courseId": "DFML", "classroom": "C03", "classType": "class" },
+      { "courseId": "NAI", "classroom": "C02", "classType": "class" },
+      { "courseId": "BAI", "classroom": "A106", "classType": "class" },
+      { "courseId": "ADDV", "classroom": "C210", "classType": "class" },
+      { "courseId": "DIP", "classroom": "C22", "classType": "class" },
+      { "courseId": "PRP", "classroom": "C13", "classType": "class" },
+      { "courseId": "CMM", "classroom": "C01", "classType": "class" },
+      { "courseId": "Sol", "classroom": "B105", "classType": "class" }
+    ],
+    "3:30-4:00": [
+      { "courseId": "CM", "classroom": "C11", "classType": "class" },
+      { "courseId": "CG", "classroom": "A007", "classType": "class" },
+      { "courseId": "DFML", "classroom": "C03", "classType": "class" },
+      { "courseId": "NAI", "classroom": "C02", "classType": "class" },
+      { "courseId": "BAI", "classroom": "A106", "classType": "class" },
+      { "courseId": "ADDV", "classroom": "C210", "classType": "class" },
+      { "courseId": "DIP", "classroom": "C22", "classType": "class" },
+      { "courseId": "PRP", "classroom": "C13", "classType": "class" },
+      { "courseId": "CMM", "classroom": "C01", "classType": "class" },
+      { "courseId": "Sol", "classroom": "B105", "classType": "class" }
+    ],
+    "4:00-4:30": [
+      { "courseId": "CM", "classroom": "C11", "classType": "class" },
+      { "courseId": "CG", "classroom": "A007", "classType": "class" },
+      { "courseId": "DFML", "classroom": "C03", "classType": "class" },
+      { "courseId": "NAI", "classroom": "C02", "classType": "class" },
+      { "courseId": "BAI", "classroom": "A106", "classType": "class" },
+      { "courseId": "ADDV", "classroom": "C210", "classType": "class" },
+      { "courseId": "DIP", "classroom": "C22", "classType": "class" },
+      { "courseId": "PRP", "classroom": "C13", "classType": "class" },
+      { "courseId": "CMM", "classroom": "C01", "classType": "class" },
+      { "courseId": "Sol", "classroom": "B105", "classType": "class" }
+    ],
+    "4:30-5:00": [
+      { "courseId": "NVP", "classroom": "C01", "classType": "class" },
+      { "courseId": "ML", "classroom": "C102", "classType": "class" },
+      { "courseId": "DIPP", "classroom": "C211", "classType": "class" },
+      { "courseId": "DAVP", "classroom": "A007", "classType": "class" },
+      { "courseId": "ATD", "classroom": "C03", "classType": "class" },
+      { "courseId": "IRob", "classroom": "C12", "classType": "class" },
+      { "courseId": "GAI", "classroom": "B105", "classType": "class" },
+      { "courseId": "EML", "classroom": "C212", "classType": "class" },
+      { "courseId": "SPA", "classroom": "A006", "classType": "class" },
+      { "courseId": "LLM", "classroom": "A106", "classType": "class" }
+    ],
+    "5:00-5:30": [
+      { "courseId": "NVP", "classroom": "C01", "classType": "class" },
+      { "courseId": "ML", "classroom": "C102", "classType": "class" },
+      { "courseId": "DIPP", "classroom": "C211", "classType": "class" },
+      { "courseId": "DAVP", "classroom": "A007", "classType": "class" },
+      { "courseId": "ATD", "classroom": "C03", "classType": "class" },
+      { "courseId": "IRob", "classroom": "C12", "classType": "class" },
+      { "courseId": "GAI", "classroom": "B105", "classType": "class" },
+      { "courseId": "EML", "classroom": "C212", "classType": "class" },
+      { "courseId": "SPA", "classroom": "A006", "classType": "class" },
+      { "courseId": "LLM", "classroom": "A106", "classType": "class" }
+    ],
+    "5:30-6:00": [
+      { "courseId": "NVP", "classroom": "C01", "classType": "class" },
+      { "courseId": "ML", "classroom": "C102", "classType": "class" },
+      { "courseId": "DIPP", "classroom": "C211", "classType": "class" },
+      { "courseId": "DAVP", "classroom": "A007", "classType": "class" },
+      { "courseId": "ATD", "classroom": "C03", "classType": "class" },
+      { "courseId": "IRob", "classroom": "C12", "classType": "class" },
+      { "courseId": "GAI", "classroom": "B105", "classType": "class" },
+      { "courseId": "EML", "classroom": "C212", "classType": "class" },
+      { "courseId": "SPA", "classroom": "A006", "classType": "class" },
+      { "courseId": "LLM", "classroom": "A106", "classType": "class" }
+    ],
+    "6:00-6:30": [
+      { "courseId": "RWBM", "classroom": "C213", "classType": "class" }
+    ],
+    "6:30-7:00": [
+      { "courseId": "RWBM", "classroom": "C213", "classType": "class" }
+    ],
+    "7:00-7:30": [
+      { "courseId": "RWBM", "classroom": "C213", "classType": "class" }
+    ]
+  },
+  "Wednesday": {
+    "8:00-8:30": [],
+    "8:30-9:00": [],
+    "9:00-9:30": [],
+    "9:30-10:00": [
+      { "courseId": "MLBA", "classroom": "A106", "classType": "class" },
+      { "courseId": "CN-Sec-A", "classroom": "C11", "classType": "class" },
+      { "courseId": "CN-Sec-B", "classroom": "C21", "classType": "class" },
+      { "courseId": "RL", "classroom": "B002", "classType": "class" },
+      { "courseId": "ADL", "classroom": "C24", "classType": "class" },
+      { "courseId": "RA-II", "classroom": "C208", "classType": "class" },
+      { "courseId": "DSNT", "classroom": "B001", "classType": "class" },
+      { "courseId": "NDM", "classroom": "B105", "classType": "class" },
+      { "courseId": "TE", "classroom": "C12", "classType": "class" },
+      { "courseId": "IIA", "classroom": "A007", "classType": "class" }
+    ],
+    "10:00-10:30": [
+      { "courseId": "MLBA", "classroom": "A106", "classType": "class" },
+      { "courseId": "CN-Sec-A", "classroom": "C11", "classType": "class" },
+      { "courseId": "CN-Sec-B", "classroom": "C21", "classType": "class" },
+      { "courseId": "RL", "classroom": "B002", "classType": "class" },
+      { "courseId": "ADL", "classroom": "C24", "classType": "class" },
+      { "courseId": "RA-II", "classroom": "C208", "classType": "class" },
+      { "courseId": "DSNT", "classroom": "B001", "classType": "class" },
+      { "courseId": "NDM", "classroom": "B105", "classType": "class" },
+      { "courseId": "TE", "classroom": "C12", "classType": "class" },
+      { "courseId": "IIA", "classroom": "A007", "classType": "class" }
+    ],
+    "10:30-11:00": [
+      { "courseId": "MLBA", "classroom": "A106", "classType": "class" },
+      { "courseId": "CN-Sec-A", "classroom": "C11", "classType": "class" },
+      { "courseId": "CN-Sec-B", "classroom": "C21", "classType": "class" },
+      { "courseId": "RL", "classroom": "B002", "classType": "class" },
+      { "courseId": "ADL", "classroom": "C24", "classType": "class" },
+      { "courseId": "RA-II", "classroom": "C208", "classType": "class" },
+      { "courseId": "DSNT", "classroom": "B001", "classType": "class" },
+      { "courseId": "NDM", "classroom": "B105", "classType": "class" },
+      { "courseId": "TE", "classroom": "C12", "classType": "class" },
+      { "courseId": "IIA", "classroom": "A007", "classType": "class" }
+    ],
+    "11:00-11:30": [
+      { "courseId": "ABIN", "classroom": "A106", "classType": "class" },
+      { "courseId": "CHI", "classroom": "A007", "classType": "class" },
+      { "courseId": "BDA", "classroom": "C01", "classType": "class" },
+      { "courseId": "USs", "classroom": "C13", "classType": "class" },
+      { "courseId": "FAE", "classroom": "C12", "classType": "class" },
+      { "courseId": "CA", "classroom": "C21", "classType": "class" },
+      { "courseId": "QCN", "classroom": "C208", "classType": "class" },
+      { "courseId": "LDLS", "classroom": "A006", "classType": "class" },
+      { "courseId": "KCPR", "classroom": "C22", "classType": "class" },
+      { "courseId": "CI", "classroom": "B001", "classType": "class" }
+    ],
+    "11:30-12:00": [
+      { "courseId": "ABIN", "classroom": "A106", "classType": "class" },
+      { "courseId": "CHI", "classroom": "A007", "classType": "class" },
+      { "courseId": "BDA", "classroom": "C01", "classType": "class" },
+      { "courseId": "USs", "classroom": "C13", "classType": "class" },
+      { "courseId": "FAE", "classroom": "C12", "classType": "class" },
+      { "courseId": "CA", "classroom": "C21", "classType": "class" },
+      { "courseId": "QCN", "classroom": "C208", "classType": "class" },
+      { "courseId": "LDLS", "classroom": "A006", "classType": "class" },
+      { "courseId": "KCPR", "classroom": "C22", "classType": "class" },
+      { "courseId": "CI", "classroom": "B001", "classType": "class" }
+    ],
+    "12:00-12:30": [
+      { "courseId": "ABIN", "classroom": "A106", "classType": "class" },
+      { "courseId": "CHI", "classroom": "A007", "classType": "class" },
+      { "courseId": "BDA", "classroom": "C01", "classType": "class" },
+      { "courseId": "USs", "classroom": "C13", "classType": "class" },
+      { "courseId": "FAE", "classroom": "C12", "classType": "class" },
+      { "courseId": "CA", "classroom": "C21", "classType": "class" },
+      { "courseId": "QCN", "classroom": "C208", "classType": "class" },
+      { "courseId": "LDLS", "classroom": "A006", "classType": "class" },
+      { "courseId": "KCPR", "classroom": "C22", "classType": "class" },
+      { "courseId": "CI", "classroom": "B001", "classType": "class" }
+    ],
+    "12:30-1:00": [
+      { "courseId": "Tcom", "classroom": "C102", "classType": "class" }
+    ],
+    "1:00-1:30": [
+      { "courseId": "Tcom", "classroom": "C102", "classType": "class" }
+    ],
+    "1:30-2:00": [
+      { "courseId": "Tcom", "classroom": "C102", "classType": "class" },
+      { "courseId": "FAE", "classroom": "C13", "classType": "tut" }
+    ],
+    "2:00-2:30": [
+      { "courseId": "FAE", "classroom": "C13", "classType": "tut" }
+    ],
+    "2:30-3:00": [
+      { "courseId": "FAE", "classroom": "C13", "classType": "tut" },
+      { "courseId": "CBB", "classroom": "C03", "classType": "class" },
+      { "courseId": "GA", "classroom": "C11", "classType": "class" },
+      { "courseId": "3DAF", "classroom": "B407", "classType": "class" },
+      { "courseId": "DVD", "classroom": "C21", "classType": "class" },
+      { "courseId": "AV", "classroom": "C209", "classType": "class" },
+      { "courseId": "WSI", "classroom": "C22", "classType": "class" },
+      { "courseId": "DSc", "classroom": "C11", "classType": "class" },
+      { "courseId": "GMT", "classroom": "B105", "classType": "class" },
+      { "courseId": "SGCCI", "classroom": "C211", "classType": "class" },
+      { "courseId": "AE", "classroom": "C208", "classType": "class" }
+    ],
+    "3:00-3:30": [
+      { "courseId": "CBB", "classroom": "C03", "classType": "class" },
+      { "courseId": "GA", "classroom": "C11", "classType": "class" },
+      { "courseId": "3DAF", "classroom": "B407", "classType": "class" },
+      { "courseId": "DVD", "classroom": "C21", "classType": "class" },
+      { "courseId": "AV", "classroom": "C209", "classType": "class" },
+      { "courseId": "WSI", "classroom": "C22", "classType": "class" },
+      { "courseId": "DSc", "classroom": "C11", "classType": "class" },
+      { "courseId": "GMT", "classroom": "B105", "classType": "class" },
+      { "courseId": "SGCCI", "classroom": "C211", "classType": "class" },
+      { "courseId": "AE", "classroom": "C208", "classType": "class" }
+    ],
+    "3:30-4:00": [
+      { "courseId": "CBB", "classroom": "C03", "classType": "class" },
+      { "courseId": "GA", "classroom": "C11", "classType": "class" },
+      { "courseId": "3DAF", "classroom": "B407", "classType": "class" },
+      { "courseId": "DVD", "classroom": "C21", "classType": "class" },
+      { "courseId": "AV", "classroom": "C209", "classType": "class" },
+      { "courseId": "WSI", "classroom": "C22", "classType": "class" },
+      { "courseId": "DSc", "classroom": "C11", "classType": "class" },
+      { "courseId": "GMT", "classroom": "B105", "classType": "class" },
+      { "courseId": "SGCCI", "classroom": "C211", "classType": "class" },
+      { "courseId": "AE", "classroom": "C208", "classType": "class" }
+    ],
+    "4:00-4:30": [
+      { "courseId": "FOMB", "classroom": "C210", "classType": "class" },
+      { "courseId": "DTI", "classroom": "C03", "classType": "class" },
+      { "courseId": "UDXR", "classroom": "C22", "classType": "class" },
+      { "courseId": "DSP", "classroom": "A106", "classType": "class" },
+      { "courseId": "VDF", "classroom": "C11", "classType": "class" },
+      { "courseId": "CmpA", "classroom": "C213", "classType": "class" },
+      { "courseId": "KCPT", "classroom": "C23", "classType": "class" },
+      { "courseId": "BEco", "classroom": "C214", "classType": "class" },
+      { "courseId": "SoE", "classroom": "C02", "classType": "class" },
+      { "courseId": "IFT", "classroom": "C24", "classType": "class" }
+    ],
+    "4:30-5:00": [
+      { "courseId": "FOMB", "classroom": "C210", "classType": "class" },
+      { "courseId": "DTI", "classroom": "C03", "classType": "class" },
+      { "courseId": "UDXR", "classroom": "C22", "classType": "class" },
+      { "courseId": "DSP", "classroom": "A106", "classType": "class" },
+      { "courseId": "VDF", "classroom": "C11", "classType": "class" },
+      { "courseId": "CmpA", "classroom": "C213", "classType": "class" },
+      { "courseId": "KCPT", "classroom": "C23", "classType": "class" },
+      { "courseId": "BEco", "classroom": "C214", "classType": "class" },
+      { "courseId": "SoE", "classroom": "C02", "classType": "class" },
+      { "courseId": "IFT", "classroom": "C24", "classType": "class" }
+    ],
+    "5:00-5:30": [
+      { "courseId": "FOMB", "classroom": "C210", "classType": "class" },
+      { "courseId": "DTI", "classroom": "C03", "classType": "class" },
+      { "courseId": "UDXR", "classroom": "C22", "classType": "class" },
+      { "courseId": "DSP", "classroom": "A106", "classType": "class" },
+      { "courseId": "VDF", "classroom": "C11", "classType": "class" },
+      { "courseId": "CmpA", "classroom": "C213", "classType": "class" },
+      { "courseId": "KCPT", "classroom": "C23", "classType": "class" },
+      { "courseId": "BEco", "classroom": "C214", "classType": "class" },
+      { "courseId": "SoE", "classroom": "C02", "classType": "class" },
+      { "courseId": "IFT", "classroom": "C24", "classType": "class" }
+    ],
+    "5:30-6:00": [
+      { "courseId": "OOPD", "classroom": "C101", "classType": "class" }
+    ],
+    "6:00-6:30": [
+      { "courseId": "OOPD", "classroom": "C101", "classType": "class" }
+    ],
+    "6:30-7:00": [
+      { "courseId": "OOPD", "classroom": "C101", "classType": "class" }
+    ],
+    "7:00-7:30": []
+  },
+  "Thursday": {
+    "8:00-8:30": [],
+    "8:30-9:00": [],
+    "9:00-9:30": [],
+    "9:30-10:00": [
+      { "courseId": "CoMeG", "classroom": "C03", "classType": "class" },
+      { "courseId": "AI Sec A", "classroom": "C102", "classType": "class" },
+      { "courseId": "CDA", "classroom": "C13", "classType": "class" },
+      { "courseId": "AI Sec B", "classroom": "C02", "classType": "class" },
+      { "courseId": "MDG", "classroom": "B407", "classType": "class" },
+      { "courseId": "LST", "classroom": "C210", "classType": "class" },
+      { "courseId": "QM", "classroom": "C11", "classType": "class" },
+      { "courseId": "MPT", "classroom": "C24", "classType": "class" },
+      { "courseId": "AERM", "classroom": "C211", "classType": "class" },
+      { "courseId": "US", "classroom": "A106", "classType": "class" }
+    ],
+    "10:00-10:30": [
+      { "courseId": "CoMeG", "classroom": "C03", "classType": "class" },
+      { "courseId": "AI Sec A", "classroom": "C102", "classType": "class" },
+      { "courseId": "CDA", "classroom": "C13", "classType": "class" },
+      { "courseId": "AI Sec B", "classroom": "C02", "classType": "class" },
+      { "courseId": "MDG", "classroom": "B407", "classType": "class" },
+      { "courseId": "LST", "classroom": "C210", "classType": "class" },
+      { "courseId": "QM", "classroom": "C11", "classType": "class" },
+      { "courseId": "MPT", "classroom": "C24", "classType": "class" },
+      { "courseId": "AERM", "classroom": "C211", "classType": "class" },
+      { "courseId": "US", "classroom": "A106", "classType": "class" }
+    ],
+    "10:30-11:00": [
+      { "courseId": "CoMeG", "classroom": "C03", "classType": "class" },
+      { "courseId": "AI Sec A", "classroom": "C102", "classType": "class" },
+      { "courseId": "CDA", "classroom": "C13", "classType": "class" },
+      { "courseId": "AI Sec B", "classroom": "C02", "classType": "class" },
+      { "courseId": "MDG", "classroom": "B407", "classType": "class" },
+      { "courseId": "LST", "classroom": "C210", "classType": "class" },
+      { "courseId": "QM", "classroom": "C11", "classType": "class" },
+      { "courseId": "MPT", "classroom": "C24", "classType": "class" },
+      { "courseId": "AERM", "classroom": "C211", "classType": "class" },
+      { "courseId": "US", "classroom": "A106", "classType": "class" }
+    ],
+    "11:00-11:30": [
+      { "courseId": "BioP", "classroom": "C01", "classType": "class" },
+      { "courseId": "RI", "classroom": "C213", "classType": "class" },
+      { "courseId": "ERI", "classroom": "C22", "classType": "class" },
+      { "courseId": "BML", "classroom": "C24", "classType": "class" },
+      { "courseId": "QMD", "classroom": "C208", "classType": "class" },
+      { "courseId": "PMC", "classroom": "C214", "classType": "class" },
+      { "courseId": "ETB", "classroom": "C210", "classType": "class" },
+      { "courseId": "ME", "classroom": "C21", "classType": "class" },
+      { "courseId": "MG", "classroom": "C211", "classType": "class" }
+    ],
+    "11:30-12:00": [
+      { "courseId": "BioP", "classroom": "C01", "classType": "class" },
+      { "courseId": "RI", "classroom": "C213", "classType": "class" },
+      { "courseId": "ERI", "classroom": "C22", "classType": "class" },
+      { "courseId": "BML", "classroom": "C24", "classType": "class" },
+      { "courseId": "QMD", "classroom": "C208", "classType": "class" },
+      { "courseId": "PMC", "classroom": "C214", "classType": "class" },
+      { "courseId": "ETB", "classroom": "C210", "classType": "class" },
+      { "courseId": "ME", "classroom": "C21", "classType": "class" },
+      { "courseId": "MG", "classroom": "C211", "classType": "class" }
+    ],
+    "12:00-12:30": [
+      { "courseId": "BioP", "classroom": "C01", "classType": "class" },
+      { "courseId": "RI", "classroom": "C213", "classType": "class" },
+      { "courseId": "ERI", "classroom": "C22", "classType": "class" },
+      { "courseId": "BML", "classroom": "C24", "classType": "class" },
+      { "courseId": "QMD", "classroom": "C208", "classType": "class" },
+      { "courseId": "PMC", "classroom": "C214", "classType": "class" },
+      { "courseId": "ETB", "classroom": "C210", "classType": "class" },
+      { "courseId": "ME", "classroom": "C21", "classType": "class" },
+      { "courseId": "MG", "classroom": "C211", "classType": "class" }
+    ],
+    "12:30-1:00": [
+      { "courseId": "SPA", "classroom": "B001, B002, A106, B105", "classType": "tut" }
+    ],
+    "1:00-1:30": [
+      { "courseId": "SPA", "classroom": "B001, B002, A106, B105", "classType": "tut" }
+    ],
+    "1:30-2:00": [
+      { "courseId": "EVS", "classroom": "C102", "classType": "class" }
+    ],
+    "2:00-2:30": [
+      { "courseId": "EVS", "classroom": "C102", "classType": "class" }
+    ],
+    "2:30-3:00": [
+      { "courseId": "EVS", "classroom": "C102", "classType": "class" }
+    ],
+    "3:00-3:30": [
+      { "courseId": "CM", "classroom": "C11", "classType": "class" },
+      { "courseId": "CG", "classroom": "A007", "classType": "class" }
+    ],
+    "3:30-4:00": [
+      { "courseId": "CM", "classroom": "C11", "classType": "class" },
+      { "courseId": "CG", "classroom": "A007", "classType": "class" }
+    ],
+    "4:00-4:30": [
+      { "courseId": "CM", "classroom": "C11", "classType": "class" },
+      { "courseId": "CG", "classroom": "A007", "classType": "class" }
+    ],
+    "4:30-5:00": [
+      { "courseId": "NVP", "classroom": "C01", "classType": "class" },
+      { "courseId": "ML", "classroom": "C102", "classType": "class" },
+      { "courseId": "DIPP", "classroom": "C211", "classType": "class" },
+      { "courseId": "DAVP", "classroom": "A007", "classType": "class" },
+      { "courseId": "ATD", "classroom": "C03", "classType": "class" },
+      { "courseId": "IRob", "classroom": "C12", "classType": "class" },
+      { "courseId": "GAI", "classroom": "B105", "classType": "class" },
+      { "courseId": "EML", "classroom": "C212", "classType": "class" },
+      { "courseId": "SPA", "classroom": "A006", "classType": "class" },
+      { "courseId": "LLM", "classroom": "A106", "classType": "class" }
+    ],
+    "5:00-5:30": [
+      { "courseId": "NVP", "classroom": "C01", "classType": "class" },
+      { "courseId": "ML", "classroom": "C102", "classType": "class" },
+      { "courseId": "DIPP", "classroom": "C211", "classType": "class" },
+      { "courseId": "DAVP", "classroom": "A007", "classType": "class" },
+      { "courseId": "ATD", "classroom": "C03", "classType": "class" },
+      { "courseId": "IRob", "classroom": "C12", "classType": "class" },
+      { "courseId": "GAI", "classroom": "B105", "classType": "class" },
+      { "courseId": "EML", "classroom": "C212", "classType": "class" },
+      { "courseId": "SPA", "classroom": "A006", "classType": "class" },
+      { "courseId": "LLM", "classroom": "A106", "classType": "class" }
+    ],
+    "5:30-6:00": [
+      { "courseId": "NVP", "classroom": "C01", "classType": "class" },
+      { "courseId": "ML", "classroom": "C102", "classType": "class" },
+      { "courseId": "DIPP", "classroom": "C211", "classType": "class" },
+      { "courseId": "DAVP", "classroom": "A007", "classType": "class" },
+      { "courseId": "ATD", "classroom": "C03", "classType": "class" },
+      { "courseId": "IRob", "classroom": "C12", "classType": "class" },
+      { "courseId": "GAI", "classroom": "B105", "classType": "class" },
+      { "courseId": "EML", "classroom": "C212", "classType": "class" },
+      { "courseId": "SPA", "classroom": "A006", "classType": "class" },
+      { "courseId": "LLM", "classroom": "A106", "classType": "class" }
+    ],
+    "6:00-6:30": [
+      { "courseId": "RWBM", "classroom": "C213", "classType": "class" }
+    ],
+    "6:30-7:00": [
+      { "courseId": "RWBM", "classroom": "C213", "classType": "class" }
+    ],
+    "7:00-7:30": [
+      { "courseId": "RWBM", "classroom": "C213", "classType": "class" }
+    ]
+  },
+  "Friday": {
+    "8:00-8:30": [],
+    "8:30-9:00": [],
+    "9:00-9:30": [],
+    "9:30-10:00": [
+      { "courseId": "ABIN", "classroom": "A106", "classType": "class" },
+      { "courseId": "CHI", "classroom": "A007", "classType": "class" },
+      { "courseId": "BDA", "classroom": "C01", "classType": "class" },
+      { "courseId": "USs", "classroom": "C13", "classType": "class" },
+      { "courseId": "FAE", "classroom": "C12", "classType": "class" },
+      { "courseId": "CA", "classroom": "C21", "classType": "class" },
+      { "courseId": "QCN", "classroom": "C208", "classType": "class" },
+      { "courseId": "LDLS", "classroom": "A006", "classType": "class" },
+      { "courseId": "KCPR", "classroom": "C22", "classType": "class" },
+      { "courseId": "CI", "classroom": "B001", "classType": "class" }
+    ],
+    "10:00-10:30": [
+      { "courseId": "ABIN", "classroom": "A106", "classType": "class" },
+      { "courseId": "CHI", "classroom": "A007", "classType": "class" },
+      { "courseId": "BDA", "classroom": "C01", "classType": "class" },
+      { "courseId": "USs", "classroom": "C13", "classType": "class" },
+      { "courseId": "FAE", "classroom": "C12", "classType": "class" },
+      { "courseId": "CA", "classroom": "C21", "classType": "class" },
+      { "courseId": "QCN", "classroom": "C208", "classType": "class" },
+      { "courseId": "LDLS", "classroom": "A006", "classType": "class" },
+      { "courseId": "KCPR", "classroom": "C22", "classType": "class" },
+      { "courseId": "CI", "classroom": "B001", "classType": "class" }
+    ],
+    "10:30-11:00": [
+      { "courseId": "ABIN", "classroom": "A106", "classType": "class" },
+      { "courseId": "CHI", "classroom": "A007", "classType": "class" },
+      { "courseId": "BDA", "classroom": "C01", "classType": "class" },
+      { "courseId": "USs", "classroom": "C13", "classType": "class" },
+      { "courseId": "FAE", "classroom": "C12", "classType": "class" },
+      { "courseId": "CA", "classroom": "C21", "classType": "class" },
+      { "courseId": "QCN", "classroom": "C208", "classType": "class" },
+      { "courseId": "LDLS", "classroom": "A006", "classType": "class" },
+      { "courseId": "KCPR", "classroom": "C22", "classType": "class" },
+      { "courseId": "CI", "classroom": "B001", "classType": "class" }
+    ],
+    "11:00-11:30": [
+      { "courseId": "CGAS", "classroom": "C02", "classType": "class" },
+      { "courseId": "IFA", "classroom": "C24", "classType": "class" },
+      { "courseId": "MAD", "classroom": "C214", "classType": "class" },
+      { "courseId": "CMOS", "classroom": "C01", "classType": "class" },
+      { "courseId": "ADC", "classroom": "C213", "classType": "class" },
+      { "courseId": "SC", "classroom": "C21", "classType": "class" },
+      { "courseId": "FF", "classroom": "C102", "classType": "class" },
+      { "courseId": "FOE", "classroom": "C212", "classType": "class" },
+      { "courseId": "TNT", "classroom": "C13", "classType": "class" },
+      { "courseId": "IDUDA", "classroom": "C03", "classType": "class" }
+    ],
+    "11:30-12:00": [
+      { "courseId": "CGAS", "classroom": "C02", "classType": "class" },
+      { "courseId": "IFA", "classroom": "C24", "classType": "class" },
+      { "courseId": "MAD", "classroom": "C214", "classType": "class" },
+      { "courseId": "CMOS", "classroom": "C01", "classType": "class" },
+      { "courseId": "ADC", "classroom": "C213", "classType": "class" },
+      { "courseId": "SC", "classroom": "C21", "classType": "class" },
+      { "courseId": "FF", "classroom": "C102", "classType": "class" },
+      { "courseId": "FOE", "classroom": "C212", "classType": "class" },
+      { "courseId": "TNT", "classroom": "C13", "classType": "class" },
+      { "courseId": "IDUDA", "classroom": "C03", "classType": "class" }
+    ],
+    "12:00-12:30": [
+      { "courseId": "CGAS", "classroom": "C02", "classType": "class" },
+      { "courseId": "IFA", "classroom": "C24", "classType": "class" },
+      { "courseId": "MAD", "classroom": "C214", "classType": "class" },
+      { "courseId": "CMOS", "classroom": "C01", "classType": "class" },
+      { "courseId": "ADC", "classroom": "C213", "classType": "class" },
+      { "courseId": "SC", "classroom": "C21", "classType": "class" },
+      { "courseId": "FF", "classroom": "C102", "classType": "class" },
+      { "courseId": "FOE", "classroom": "C212", "classType": "class" },
+      { "courseId": "TNT", "classroom": "C13", "classType": "class" },
+      { "courseId": "IDUDA", "classroom": "C03", "classType": "class" }
+    ],
+    "12:30-1:00": [
+      { "courseId": "CG", "classroom": "A106", "classType": "lab" }
+    ],
+    "1:00-1:30": [
+      { "courseId": "CG", "classroom": "A106", "classType": "lab" }
+    ],
+    "1:30-2:00": [
+      { "courseId": "CG", "classroom": "A106", "classType": "lab" }
+    ],
+    "2:00-2:30": [
+      { "courseId": "CG", "classroom": "A106", "classType": "lab" }
+    ],
+    "2:30-3:00": [
+      { "courseId": "ML", "classroom": "C01, C101", "classType": "tut" }
+    ],
+    "3:00-3:30": [
+      { "courseId": "ML", "classroom": "C01, C101", "classType": "tut" }
+    ],
+    "3:30-4:00": [
+      { "courseId": "Faculty Meeting", "classroom": "", "classType": "event" }
+    ],
+    "4:00-4:30": [
+      { "courseId": "Faculty Meeting", "classroom": "", "classType": "event" }
+    ],
+    "4:30-5:00": [
+      { "courseId": "Seminar Slot", "classroom": "C02", "classType": "event" }
+    ],
+    "5:00-5:30": [
+      { "courseId": "Seminar Slot", "classroom": "C02", "classType": "event" }
+    ],
+    "5:30-6:00": [],
+    "6:00-6:30": [],
+    "6:30-7:00": [],
+    "7:00-7:30": []
+  }
+}
