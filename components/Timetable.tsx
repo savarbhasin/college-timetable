@@ -50,16 +50,44 @@ export default function Timetable({ selected }: Props) {
   const downloadAsImage = async () => {
     if (!timetableRef.current) return;
 
+    const tableElement = timetableRef.current.querySelector('table');
+    if (!tableElement) return;
+
     try {
       // @ts-ignore
       const { toJpeg } = await import('html-to-image');
 
-      const dataUrl = await toJpeg(timetableRef.current, {
+      // Store original styles
+      const originalWidth = tableElement.style.width;
+      const originalMinWidth = tableElement.style.minWidth;
+      const originalFontSize = document.documentElement.style.fontSize;
+
+      // Set fixed dimensions for consistent export across devices
+      tableElement.style.width = 'max-content';
+      tableElement.style.minWidth = '1200px';
+      
+      // Ensure consistent font sizing
+      document.documentElement.style.fontSize = '16px';
+
+      // Wait for layout to settle
+      await new Promise(resolve => setTimeout(resolve, 100));
+
+      const dataUrl = await toJpeg(tableElement, {
         backgroundColor: '#0f172a',
         pixelRatio: 2,
         cacheBust: true,
         quality: 0.95,
+        width: 1200,
+        style: {
+          transform: 'scale(1)',
+          transformOrigin: 'top left',
+        }
       });
+
+      // Restore original styles
+      tableElement.style.width = originalWidth;
+      tableElement.style.minWidth = originalMinWidth;
+      document.documentElement.style.fontSize = originalFontSize;
 
       const link = document.createElement('a');
       link.download = `timetable-${new Date().toISOString().split('T')[0]}.jpg`;
@@ -67,6 +95,13 @@ export default function Timetable({ selected }: Props) {
       link.click();
     } catch (error) {
       console.error('Error generating image:', error);
+      
+      // Ensure styles are restored even if there's an error
+      if (tableElement) {
+        tableElement.style.width = '';
+        tableElement.style.minWidth = '';
+        document.documentElement.style.fontSize = '';
+      }
     }
   };
 

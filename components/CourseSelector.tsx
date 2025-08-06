@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Search, X, Check, BookOpen } from 'lucide-react';
 import coursesData from '../courses.json';
 
@@ -16,6 +16,7 @@ interface Props {
 export default function CourseSelector({ selected, onChange }: Props) {
   const [filter, setFilter] = useState('');
   const [isExpanded, setIsExpanded] = useState(true);
+  const searchInputRef = useRef<HTMLInputElement>(null);
 
   const filteredCourses = (coursesData as Course[]).filter(
     (course) =>
@@ -29,6 +30,11 @@ export default function CourseSelector({ selected, onChange }: Props) {
     } else {
       onChange([...selected, courseId]);
     }
+    
+    // Refocus the search input after course selection
+    setTimeout(() => {
+      searchInputRef.current?.focus();
+    }, 0);
   };
 
   const clearAll = () => {
@@ -62,6 +68,7 @@ export default function CourseSelector({ selected, onChange }: Props) {
       <div className="relative mb-4">
         <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-4 h-4" />
         <input
+          ref={searchInputRef}
           type="text"
           placeholder="Search courses by ID or name..."
           value={filter}
@@ -89,7 +96,10 @@ export default function CourseSelector({ selected, onChange }: Props) {
                 <Check className="w-3 h-3 mr-2" />
                 {courseId}
                 <button
-                  onClick={() => handleToggle(courseId)}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleToggle(courseId);
+                  }}
                   className="ml-2 hover:bg-primary-foreground/20 rounded-full p-0.5 transition-colors"
                 >
                   <X className="w-3 h-3" />
