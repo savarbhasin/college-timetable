@@ -15,7 +15,7 @@ interface Props {
 
 export default function CourseSelector({ selected, onChange }: Props) {
   const [filter, setFilter] = useState('');
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
 
   const filteredCourses = (coursesData as Course[]).filter(
     (course) =>
