@@ -112,7 +112,7 @@ export default function Timetable() {
                   key={slot}
                   className="bg-muted text-muted-foreground font-medium p-1 text-center w-20"
                 >
-                  <div className={`text-[12px] leading-tight font-bold`}>
+                  <div className={`text-[7px] leading-tight font-bold`}>
                     {formatTimeSlot(slot)}
                   </div>
                 </th>
