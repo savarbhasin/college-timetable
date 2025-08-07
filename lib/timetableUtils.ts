@@ -22,13 +22,12 @@ export const getFilteredEntries = (
 /**
  * Formats time slot display text
  * @param slot - Time slot string (e.g., "9:00-9:30")
- * @returns Formatted display string
+ * @returns Formatted display string (just the start time)
  */
 export const formatTimeSlot = (slot: string): string => {
-  const [start, end] = slot.split('-');
+  const [start] = slot.split('-');
   const formattedStart = start.endsWith(':00') ? start.split(':')[0] : start;
-  const formattedEnd = end.endsWith(':00') ? end.split(':')[0] : end;
-  return `${formattedStart} - ${formattedEnd}`;
+  return formattedStart;
 };
 
 /**
