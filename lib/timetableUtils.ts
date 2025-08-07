@@ -25,9 +25,10 @@ export const getFilteredEntries = (
  * @returns Formatted display string (just the start time)
  */
 export const formatTimeSlot = (slot: string): string => {
-  const [start] = slot.split('-');
+  const [start, end] = slot.split('-');
   const formattedStart = start.endsWith(':00') ? start.split(':')[0] : start;
-  return formattedStart;
+  const formattedEnd = end.endsWith(':00') ? end.split(':')[0] : end;
+  return `${formattedStart}-${formattedEnd}`;
 };
 
 /**

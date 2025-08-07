@@ -112,7 +112,7 @@ export default function Timetable() {
                   key={slot}
                   className="bg-muted text-muted-foreground font-medium p-1 text-center w-20"
                 >
-                  <div className={`text-[10px] leading-tight font-bold`}>
+                  <div className={`text-[8px] leading-tight font-bold`}>
                     {formatTimeSlot(slot)}
                   </div>
                 </th>
@@ -133,7 +133,7 @@ export default function Timetable() {
                 rowCells.push(
                   <td
                     key={`${day}-${currentSlot}`}
-                    colSpan={colSpan+1}
+                    colSpan={colSpan}
                     className="align-top min-h-16 p-0"
                   >
                     {renderCellContent(currentEntries, day, currentSlot)}
