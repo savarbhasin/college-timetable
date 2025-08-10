@@ -51,7 +51,7 @@
       },
       {
         "courseId": "IIA",
-        "classroom": "A007",
+        "classroom": "A106",
         "classType": "class"
       },
       {
@@ -118,7 +118,7 @@
       },
       {
         "courseId": "IIA",
-        "classroom": "A007",
+        "classroom": "A106",
         "classType": "class"
       },
       {
@@ -185,7 +185,7 @@
       },
       {
         "courseId": "IIA",
-        "classroom": "A007",
+        "classroom": "A106",
         "classType": "class"
       },
       {
@@ -264,6 +264,11 @@
         "courseId": "ELD",
         "classroom": "A006",
         "classType": "class"
+      },
+      {
+        "courseId": "DVD",
+        "classroom": "C11",
+        "classType": "class"
       }
     ],
     "11:30-12:00": [
@@ -325,6 +330,11 @@
       {
         "courseId": "ELD",
         "classroom": "A006",
+        "classType": "class"
+      },
+      {
+        "courseId": "DVD",
+        "classroom": "C11",
         "classType": "class"
       }
     ],
@@ -388,6 +398,11 @@
         "courseId": "ELD",
         "classroom": "A006",
         "classType": "class"
+      },
+      {
+        "courseId": "DVD",
+        "classroom": "C11",
+        "classType": "class"
       }
     ],
     "12:30-1:00": [],
@@ -440,11 +455,7 @@
         "classroom": "B407",
         "classType": "class"
       },
-      {
-        "courseId": "DVD",
-        "classroom": "C21",
-        "classType": "class"
-      },
+      
       {
         "courseId": "AV",
         "classroom": "C209",
@@ -457,7 +468,7 @@
       },
       {
         "courseId": "DSc",
-        "classroom": "C11",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -497,11 +508,7 @@
         "classroom": "B407",
         "classType": "class"
       },
-      {
-        "courseId": "DVD",
-        "classroom": "C21",
-        "classType": "class"
-      },
+      
       {
         "courseId": "AV",
         "classroom": "C209",
@@ -514,7 +521,7 @@
       },
       {
         "courseId": "DSc",
-        "classroom": "C11",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -559,11 +566,7 @@
         "classroom": "B407",
         "classType": "class"
       },
-      {
-        "courseId": "DVD",
-        "classroom": "C21",
-        "classType": "class"
-      },
+      
       {
         "courseId": "AV",
         "classroom": "C209",
@@ -576,7 +579,7 @@
       },
       {
         "courseId": "DSc",
-        "classroom": "C11",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -1246,19 +1249,19 @@
       },
       {
         "courseId": "AP",
-        "classroom": "B003",
+        "classroom": "C102",
         "classType": "class"
       }
     ],
     "3:00-3:30": [
       {
         "courseId": "LDLS",
-        "classroom": "A006",
+        "classroom": "C23",
         "classType": "class"
       },
       {
         "courseId": "CM",
-        "classroom": "C11",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -1268,7 +1271,7 @@
       },
       {
         "courseId": "NAI",
-        "classroom": "C02",
+        "classroom": "A006",
         "classType": "class"
       },
       {
@@ -1308,19 +1311,19 @@
       },
       {
         "courseId": "AP",
-        "classroom": "B003",
+        "classroom": "C102",
         "classType": "class"
       }
     ],
     "3:30-4:00": [
       {
         "courseId": "LDLS",
-        "classroom": "A006",
+        "classroom": "C23",
         "classType": "class"
       },
       {
         "courseId": "CM",
-        "classroom": "C11",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -1330,7 +1333,7 @@
       },
       {
         "courseId": "NAI",
-        "classroom": "C02",
+        "classroom": "A006",
         "classType": "class"
       },
       {
@@ -1370,19 +1373,19 @@
       },
       {
         "courseId": "AP",
-        "classroom": "B003",
+        "classroom": "C102",
         "classType": "class"
       }
     ],
     "4:00-4:30": [
       {
         "courseId": "LDLS",
-        "classroom": "A006",
+        "classroom": "C23",
         "classType": "class"
       },
       {
         "courseId": "CM",
-        "classroom": "C11",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -1392,7 +1395,7 @@
       },
       {
         "courseId": "NAI",
-        "classroom": "C02",
+        "classroom": "A006",
         "classType": "class"
       },
       {
@@ -1432,7 +1435,7 @@
       },
       {
         "courseId": "AP",
-        "classroom": "B003",
+        "classroom": "C102",
         "classType": "class"
       }
     ],
@@ -1733,7 +1736,7 @@
       },
       {
         "courseId": "IIA",
-        "classroom": "A007",
+        "classroom": "A106",
         "classType": "class"
       },
       {
@@ -1810,7 +1813,7 @@
       },
       {
         "courseId": "IIA",
-        "classroom": "A007",
+        "classroom": "A106",
         "classType": "class"
       },
       {
@@ -1887,7 +1890,7 @@
       },
       {
         "courseId": "IIA",
-        "classroom": "A007",
+        "classroom": "A106",
         "classType": "class"
       },
       {
@@ -1934,7 +1937,7 @@
       },
       {
         "courseId": "USs",
-        "classroom": "C13",
+        "classroom": "B105",
         "classType": "class"
       },
       {
@@ -1954,7 +1957,7 @@
       },
       {
         "courseId": "DFML",
-        "classroom": "C12",
+        "classroom": "C03",
         "classType": "class"
       },
       {
@@ -1996,7 +1999,7 @@
       },
       {
         "courseId": "USs",
-        "classroom": "C13",
+        "classroom": "B105",
         "classType": "class"
       },
       {
@@ -2016,7 +2019,7 @@
       },
       {
         "courseId": "DFML",
-        "classroom": "C12",
+        "classroom": "C03",
         "classType": "class"
       },
       {
@@ -2058,7 +2061,7 @@
       },
       {
         "courseId": "USs",
-        "classroom": "C13",
+        "classroom": "B105",
         "classType": "class"
       },
       {
@@ -2078,7 +2081,7 @@
       },
       {
         "courseId": "DFML",
-        "classroom": "C12",
+        "classroom": "C03",
         "classType": "class"
       },
       {
@@ -2193,11 +2196,7 @@
         "classroom": "B407",
         "classType": "class"
       },
-      {
-        "courseId": "DVD",
-        "classroom": "C21",
-        "classType": "class"
-      },
+      
       {
         "courseId": "AV",
         "classroom": "C209",
@@ -2210,7 +2209,7 @@
       },
       {
         "courseId": "DSc",
-        "classroom": "C11",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -2250,11 +2249,7 @@
         "classroom": "B407",
         "classType": "class"
       },
-      {
-        "courseId": "DVD",
-        "classroom": "C21",
-        "classType": "class"
-      },
+      
       {
         "courseId": "AV",
         "classroom": "C209",
@@ -2267,7 +2262,7 @@
       },
       {
         "courseId": "DSc",
-        "classroom": "C11",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -2312,11 +2307,7 @@
         "classroom": "B407",
         "classType": "class"
       },
-      {
-        "courseId": "DVD",
-        "classroom": "C21",
-        "classType": "class"
-      },
+      
       {
         "courseId": "AV",
         "classroom": "C209",
@@ -2329,7 +2320,7 @@
       },
       {
         "courseId": "DSc",
-        "classroom": "C11",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -2783,6 +2774,11 @@
     ],
     "11:00-11:30": [
       {
+        "courseId": "DVD",
+        "classroom": "C11",
+        "classType": "class"
+      },
+      {
         "courseId": "ELD",
         "classroom": "A006",
         "classType": "class"
@@ -2840,6 +2836,11 @@
     ],
     "11:30-12:00": [
       {
+        "courseId": "DVD",
+        "classroom": "C11",
+        "classType": "class"
+      },
+      {
         "courseId": "ELD",
         "classroom": "A006",
         "classType": "class"
@@ -2896,6 +2897,11 @@
       }
     ],
     "12:00-12:30": [
+      {
+        "courseId": "DVD",
+        "classroom": "C11",
+        "classType": "class"
+      },
       {
         "courseId": "ELD",
         "classroom": "A006",
@@ -3030,12 +3036,12 @@
       },
       {
         "courseId": "LDLS",
-        "classroom": "A006",
+        "classroom": "C23",
         "classType": "class"
       },
       {
         "courseId": "CM",
-        "classroom": "C11",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -3045,7 +3051,7 @@
       },
       {
         "courseId": "NAI",
-        "classroom": "C02",
+        "classroom": "A006",
         "classType": "class"
       },
       {
@@ -3092,12 +3098,12 @@
       },
       {
         "courseId": "LDLS",
-        "classroom": "A006",
+        "classroom": "C23",
         "classType": "class"
       },
       {
         "courseId": "CM",
-        "classroom": "C11",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -3107,7 +3113,7 @@
       },
       {
         "courseId": "NAI",
-        "classroom": "C02",
+        "classroom": "A006",
         "classType": "class"
       },
       {
@@ -3154,12 +3160,12 @@
       },
       {
         "courseId": "LDLS",
-        "classroom": "A006",
+        "classroom": "C23",
         "classType": "class"
       },
       {
         "courseId": "CM",
-        "classroom": "C11",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -3169,7 +3175,7 @@
       },
       {
         "courseId": "NAI",
-        "classroom": "C02",
+        "classroom": "A006",
         "classType": "class"
       },
       {
@@ -3448,7 +3454,7 @@
       },
       {
         "courseId": "USs",
-        "classroom": "C13",
+        "classroom": "B105",
         "classType": "class"
       },
       {
@@ -3495,7 +3501,7 @@
       },
       {
         "courseId": "USs",
-        "classroom": "C13",
+        "classroom": "B105",
         "classType": "class"
       },
       {
@@ -3542,7 +3548,7 @@
       },
       {
         "courseId": "USs",
-        "classroom": "C13",
+        "classroom": "B105",
         "classType": "class"
       },
       {
