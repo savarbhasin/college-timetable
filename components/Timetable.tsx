@@ -64,7 +64,7 @@ export default function Timetable() {
             Your Timetable
             {selectedCourses.length > 0 && (
               <span className="text-sm font-normal text-muted-foreground ml-2">
-                ({selectedCourses.length} courses selectedCourses)
+                ({selectedCourses.length} courses)
               </span>
             )}
           </h2>

@@ -6,7 +6,7 @@
     "9:30-10:00": [
       {
         "courseId": "MLBA",
-        "classroom": "A106",
+        "classroom": "C01",
         "classType": "class"
       },
       {
@@ -21,7 +21,7 @@
       },
       {
         "courseId": "RL",
-        "classroom": "B002",
+        "classroom": "A007",
         "classType": "class"
       },
       {
@@ -51,7 +51,7 @@
       },
       {
         "courseId": "IIA",
-        "classroom": "A106",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -61,7 +61,7 @@
       },
       {
         "courseId": "DS",
-        "classroom": "C01",
+        "classroom": "C102",
         "classType": "class"
       },
       {
@@ -73,7 +73,7 @@
     "10:00-10:30": [
       {
         "courseId": "MLBA",
-        "classroom": "A106",
+        "classroom": "C01",
         "classType": "class"
       },
       {
@@ -88,7 +88,7 @@
       },
       {
         "courseId": "RL",
-        "classroom": "B002",
+        "classroom": "A007",
         "classType": "class"
       },
       {
@@ -118,7 +118,7 @@
       },
       {
         "courseId": "IIA",
-        "classroom": "A106",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -128,7 +128,7 @@
       },
       {
         "courseId": "DS",
-        "classroom": "C01",
+        "classroom": "C102",
         "classType": "class"
       },
       {
@@ -140,7 +140,7 @@
     "10:30-11:00": [
       {
         "courseId": "MLBA",
-        "classroom": "A106",
+        "classroom": "C01",
         "classType": "class"
       },
       {
@@ -155,7 +155,7 @@
       },
       {
         "courseId": "RL",
-        "classroom": "B002",
+        "classroom": "A007",
         "classType": "class"
       },
       {
@@ -185,7 +185,7 @@
       },
       {
         "courseId": "IIA",
-        "classroom": "A106",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -195,7 +195,7 @@
       },
       {
         "courseId": "DS",
-        "classroom": "C01",
+        "classroom": "C102",
         "classType": "class"
       },
       {
@@ -222,7 +222,7 @@
       },
       {
         "courseId": "BML",
-        "classroom": "C24",
+        "classroom": "C02",
         "classType": "class"
       },
       {
@@ -289,7 +289,7 @@
       },
       {
         "courseId": "BML",
-        "classroom": "C24",
+        "classroom": "C02",
         "classType": "class"
       },
       {
@@ -356,7 +356,7 @@
       },
       {
         "courseId": "BML",
-        "classroom": "C24",
+        "classroom": "C02",
         "classType": "class"
       },
       {
@@ -455,10 +455,9 @@
         "classroom": "B407",
         "classType": "class"
       },
-      
       {
         "courseId": "AV",
-        "classroom": "C209",
+        "classroom": "C212",
         "classType": "class"
       },
       {
@@ -483,7 +482,7 @@
       },
       {
         "courseId": "AE",
-        "classroom": "C208",
+        "classroom": "C213",
         "classType": "class"
       },
       {
@@ -508,10 +507,9 @@
         "classroom": "B407",
         "classType": "class"
       },
-      
       {
         "courseId": "AV",
-        "classroom": "C209",
+        "classroom": "C212",
         "classType": "class"
       },
       {
@@ -536,7 +534,7 @@
       },
       {
         "courseId": "AE",
-        "classroom": "C208",
+        "classroom": "C213",
         "classType": "class"
       },
       {
@@ -566,10 +564,9 @@
         "classroom": "B407",
         "classType": "class"
       },
-      
       {
         "courseId": "AV",
-        "classroom": "C209",
+        "classroom": "C212",
         "classType": "class"
       },
       {
@@ -594,7 +591,7 @@
       },
       {
         "courseId": "AE",
-        "classroom": "C208",
+        "classroom": "C213",
         "classType": "class"
       },
       {
@@ -631,7 +628,7 @@
       },
       {
         "courseId": "VDF",
-        "classroom": "C11",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -656,7 +653,7 @@
       },
       {
         "courseId": "IFT",
-        "classroom": "C24",
+        "classroom": "C212",
         "classType": "class"
       },
       {
@@ -693,7 +690,7 @@
       },
       {
         "courseId": "VDF",
-        "classroom": "C11",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -718,7 +715,7 @@
       },
       {
         "courseId": "IFT",
-        "classroom": "C24",
+        "classroom": "C212",
         "classType": "class"
       },
       {
@@ -750,7 +747,7 @@
       },
       {
         "courseId": "VDF",
-        "classroom": "C11",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -775,7 +772,7 @@
       },
       {
         "courseId": "IFT",
-        "classroom": "C24",
+        "classroom": "C212",
         "classType": "class"
       },
       {
@@ -819,7 +816,7 @@
     "9:30-10:00": [
       {
         "courseId": "CoMeG",
-        "classroom": "C03",
+        "classroom": "C208",
         "classType": "class"
       },
       {
@@ -876,7 +873,7 @@
     "10:00-10:30": [
       {
         "courseId": "CoMeG",
-        "classroom": "C03",
+        "classroom": "C208",
         "classType": "class"
       },
       {
@@ -933,7 +930,7 @@
     "10:30-11:00": [
       {
         "courseId": "CoMeG",
-        "classroom": "C03",
+        "classroom": "C208",
         "classType": "class"
       },
       {
@@ -1020,7 +1017,7 @@
       },
       {
         "courseId": "FOE",
-        "classroom": "C212",
+        "classroom": "A007",
         "classType": "class"
       },
       {
@@ -1035,7 +1032,7 @@
       },
       {
         "courseId": "FOE",
-        "classroom": "C212",
+        "classroom": "A007",
         "classType": "class"
       },
       {
@@ -1087,7 +1084,7 @@
       },
       {
         "courseId": "FOE",
-        "classroom": "C212",
+        "classroom": "A007",
         "classType": "class"
       },
       {
@@ -1107,7 +1104,7 @@
       },
       {
         "courseId": "FOE",
-        "classroom": "C212",
+        "classroom": "A007",
         "classType": "class"
       },
       {
@@ -1154,7 +1151,7 @@
       },
       {
         "courseId": "FOE",
-        "classroom": "C212",
+        "classroom": "A007",
         "classType": "class"
       },
       {
@@ -1169,7 +1166,7 @@
       },
       {
         "courseId": "FOE",
-        "classroom": "C212",
+        "classroom": "A007",
         "classType": "class"
       },
       {
@@ -1271,7 +1268,7 @@
       },
       {
         "courseId": "NAI",
-        "classroom": "A006",
+        "classroom": "C11",
         "classType": "class"
       },
       {
@@ -1286,7 +1283,7 @@
       },
       {
         "courseId": "DIP",
-        "classroom": "C22",
+        "classroom": "C212",
         "classType": "class"
       },
       {
@@ -1333,7 +1330,7 @@
       },
       {
         "courseId": "NAI",
-        "classroom": "A006",
+        "classroom": "C11",
         "classType": "class"
       },
       {
@@ -1348,7 +1345,7 @@
       },
       {
         "courseId": "DIP",
-        "classroom": "C22",
+        "classroom": "C212",
         "classType": "class"
       },
       {
@@ -1395,7 +1392,7 @@
       },
       {
         "courseId": "NAI",
-        "classroom": "A006",
+        "classroom": "C11",
         "classType": "class"
       },
       {
@@ -1410,7 +1407,7 @@
       },
       {
         "courseId": "DIP",
-        "classroom": "C22",
+        "classroom": "C212",
         "classType": "class"
       },
       {
@@ -1472,7 +1469,7 @@
       },
       {
         "courseId": "GAI",
-        "classroom": "B105",
+        "classroom": "C11",
         "classType": "class"
       },
       {
@@ -1539,7 +1536,7 @@
       },
       {
         "courseId": "GAI",
-        "classroom": "B105",
+        "classroom": "C11",
         "classType": "class"
       },
       {
@@ -1606,7 +1603,7 @@
       },
       {
         "courseId": "GAI",
-        "classroom": "B105",
+        "classroom": "C11",
         "classType": "class"
       },
       {
@@ -1691,7 +1688,7 @@
     "9:30-10:00": [
       {
         "courseId": "MLBA",
-        "classroom": "A106",
+        "classroom": "C01",
         "classType": "class"
       },
       {
@@ -1706,7 +1703,7 @@
       },
       {
         "courseId": "RL",
-        "classroom": "B002",
+        "classroom": "A007",
         "classType": "class"
       },
       {
@@ -1736,7 +1733,7 @@
       },
       {
         "courseId": "IIA",
-        "classroom": "A106",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -1756,7 +1753,7 @@
       },
       {
         "courseId": "DS",
-        "classroom": "C01",
+        "classroom": "C102",
         "classType": "class"
       },
       {
@@ -1768,7 +1765,7 @@
     "10:00-10:30": [
       {
         "courseId": "MLBA",
-        "classroom": "A106",
+        "classroom": "C01",
         "classType": "class"
       },
       {
@@ -1783,7 +1780,7 @@
       },
       {
         "courseId": "RL",
-        "classroom": "B002",
+        "classroom": "A007",
         "classType": "class"
       },
       {
@@ -1813,7 +1810,7 @@
       },
       {
         "courseId": "IIA",
-        "classroom": "A106",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -1833,7 +1830,7 @@
       },
       {
         "courseId": "DS",
-        "classroom": "C01",
+        "classroom": "C102",
         "classType": "class"
       },
       {
@@ -1845,7 +1842,7 @@
     "10:30-11:00": [
       {
         "courseId": "MLBA",
-        "classroom": "A106",
+        "classroom": "C01",
         "classType": "class"
       },
       {
@@ -1860,7 +1857,7 @@
       },
       {
         "courseId": "RL",
-        "classroom": "B002",
+        "classroom": "A007",
         "classType": "class"
       },
       {
@@ -1890,7 +1887,7 @@
       },
       {
         "courseId": "IIA",
-        "classroom": "A106",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -1910,7 +1907,7 @@
       },
       {
         "courseId": "DS",
-        "classroom": "C01",
+        "classroom": "C102",
         "classType": "class"
       },
       {
@@ -1937,7 +1934,7 @@
       },
       {
         "courseId": "USs",
-        "classroom": "B105",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -1947,7 +1944,7 @@
       },
       {
         "courseId": "CA",
-        "classroom": "C21",
+        "classroom": "C11",
         "classType": "class"
       },
       {
@@ -1977,7 +1974,7 @@
       },
       {
         "courseId": "FOB II",
-        "classroom": "B003",
+        "classroom": "B105",
         "classType": "class"
       }
     ],
@@ -1999,7 +1996,7 @@
       },
       {
         "courseId": "USs",
-        "classroom": "B105",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -2009,7 +2006,7 @@
       },
       {
         "courseId": "CA",
-        "classroom": "C21",
+        "classroom": "C11",
         "classType": "class"
       },
       {
@@ -2039,7 +2036,7 @@
       },
       {
         "courseId": "FOB II",
-        "classroom": "B003",
+        "classroom": "B105",
         "classType": "class"
       }
     ],
@@ -2061,7 +2058,7 @@
       },
       {
         "courseId": "USs",
-        "classroom": "B105",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -2071,7 +2068,7 @@
       },
       {
         "courseId": "CA",
-        "classroom": "C21",
+        "classroom": "C11",
         "classType": "class"
       },
       {
@@ -2101,7 +2098,7 @@
       },
       {
         "courseId": "FOB II",
-        "classroom": "B003",
+        "classroom": "B105",
         "classType": "class"
       }
     ],
@@ -2118,7 +2115,7 @@
       },
       {
         "courseId": "FOB II",
-        "classroom": "B003",
+        "classroom": "B105",
         "classType": "class"
       }
     ],
@@ -2196,10 +2193,9 @@
         "classroom": "B407",
         "classType": "class"
       },
-      
       {
         "courseId": "AV",
-        "classroom": "C209",
+        "classroom": "C212",
         "classType": "class"
       },
       {
@@ -2224,7 +2220,7 @@
       },
       {
         "courseId": "AE",
-        "classroom": "C208",
+        "classroom": "C213",
         "classType": "class"
       },
       {
@@ -2249,10 +2245,9 @@
         "classroom": "B407",
         "classType": "class"
       },
-      
       {
         "courseId": "AV",
-        "classroom": "C209",
+        "classroom": "C212",
         "classType": "class"
       },
       {
@@ -2277,7 +2272,7 @@
       },
       {
         "courseId": "AE",
-        "classroom": "C208",
+        "classroom": "C213",
         "classType": "class"
       },
       {
@@ -2307,10 +2302,9 @@
         "classroom": "B407",
         "classType": "class"
       },
-      
       {
         "courseId": "AV",
-        "classroom": "C209",
+        "classroom": "C212",
         "classType": "class"
       },
       {
@@ -2335,7 +2329,7 @@
       },
       {
         "courseId": "AE",
-        "classroom": "C208",
+        "classroom": "C213",
         "classType": "class"
       },
       {
@@ -2372,7 +2366,7 @@
       },
       {
         "courseId": "VDF",
-        "classroom": "C11",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -2397,7 +2391,7 @@
       },
       {
         "courseId": "IFT",
-        "classroom": "C24",
+        "classroom": "C212",
         "classType": "class"
       },
       {
@@ -2434,7 +2428,7 @@
       },
       {
         "courseId": "VDF",
-        "classroom": "C11",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -2459,7 +2453,7 @@
       },
       {
         "courseId": "IFT",
-        "classroom": "C24",
+        "classroom": "C212",
         "classType": "class"
       },
       {
@@ -2491,7 +2485,7 @@
       },
       {
         "courseId": "VDF",
-        "classroom": "C11",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -2516,7 +2510,7 @@
       },
       {
         "courseId": "IFT",
-        "classroom": "C24",
+        "classroom": "C212",
         "classType": "class"
       },
       {
@@ -2574,7 +2568,7 @@
       },
       {
         "courseId": "CoMeG",
-        "classroom": "C03",
+        "classroom": "C208",
         "classType": "class"
       },
       {
@@ -2646,7 +2640,7 @@
       },
       {
         "courseId": "CoMeG",
-        "classroom": "C03",
+        "classroom": "C208",
         "classType": "class"
       },
       {
@@ -2718,7 +2712,7 @@
       },
       {
         "courseId": "CoMeG",
-        "classroom": "C03",
+        "classroom": "C208",
         "classType": "class"
       },
       {
@@ -2805,7 +2799,7 @@
       },
       {
         "courseId": "BML",
-        "classroom": "C24",
+        "classroom": "C02",
         "classType": "class"
       },
       {
@@ -2867,7 +2861,7 @@
       },
       {
         "courseId": "BML",
-        "classroom": "C24",
+        "classroom": "C02",
         "classType": "class"
       },
       {
@@ -2929,7 +2923,7 @@
       },
       {
         "courseId": "BML",
-        "classroom": "C24",
+        "classroom": "C02",
         "classType": "class"
       },
       {
@@ -3051,7 +3045,7 @@
       },
       {
         "courseId": "NAI",
-        "classroom": "A006",
+        "classroom": "C11",
         "classType": "class"
       },
       {
@@ -3066,7 +3060,7 @@
       },
       {
         "courseId": "DIP",
-        "classroom": "C22",
+        "classroom": "C212",
         "classType": "class"
       },
       {
@@ -3113,7 +3107,7 @@
       },
       {
         "courseId": "NAI",
-        "classroom": "A006",
+        "classroom": "C11",
         "classType": "class"
       },
       {
@@ -3128,7 +3122,7 @@
       },
       {
         "courseId": "DIP",
-        "classroom": "C22",
+        "classroom": "C212",
         "classType": "class"
       },
       {
@@ -3175,7 +3169,7 @@
       },
       {
         "courseId": "NAI",
-        "classroom": "A006",
+        "classroom": "C11",
         "classType": "class"
       },
       {
@@ -3190,7 +3184,7 @@
       },
       {
         "courseId": "DIP",
-        "classroom": "C22",
+        "classroom": "C212",
         "classType": "class"
       },
       {
@@ -3257,7 +3251,7 @@
       },
       {
         "courseId": "GAI",
-        "classroom": "B105",
+        "classroom": "C11",
         "classType": "class"
       },
       {
@@ -3324,7 +3318,7 @@
       },
       {
         "courseId": "GAI",
-        "classroom": "B105",
+        "classroom": "C11",
         "classType": "class"
       },
       {
@@ -3391,7 +3385,7 @@
       },
       {
         "courseId": "GAI",
-        "classroom": "B105",
+        "classroom": "C11",
         "classType": "class"
       },
       {
@@ -3454,7 +3448,7 @@
       },
       {
         "courseId": "USs",
-        "classroom": "B105",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -3464,7 +3458,7 @@
       },
       {
         "courseId": "CA",
-        "classroom": "C21",
+        "classroom": "C11",
         "classType": "class"
       },
       {
@@ -3501,7 +3495,7 @@
       },
       {
         "courseId": "USs",
-        "classroom": "B105",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -3511,7 +3505,7 @@
       },
       {
         "courseId": "CA",
-        "classroom": "C21",
+        "classroom": "C11",
         "classType": "class"
       },
       {
@@ -3548,7 +3542,7 @@
       },
       {
         "courseId": "USs",
-        "classroom": "B105",
+        "classroom": "B003",
         "classType": "class"
       },
       {
@@ -3558,7 +3552,7 @@
       },
       {
         "courseId": "CA",
-        "classroom": "C21",
+        "classroom": "C11",
         "classType": "class"
       },
       {
@@ -3615,7 +3609,7 @@
       },
       {
         "courseId": "FOE",
-        "classroom": "C212",
+        "classroom": "A007",
         "classType": "class"
       },
       {
@@ -3672,7 +3666,7 @@
       },
       {
         "courseId": "FOE",
-        "classroom": "C212",
+        "classroom": "A007",
         "classType": "class"
       },
       {
@@ -3729,7 +3723,7 @@
       },
       {
         "courseId": "FOE",
-        "classroom": "C212",
+        "classroom": "A007",
         "classType": "class"
       },
       {
@@ -3835,183 +3829,5 @@
     "6:00-6:30": [],
     "6:30-7:00": [],
     "7:00-7:30": []
-  },
-  
-  "Fri": {
-    "8:00-8:30": [],
-    "8:30-9:00": [
-      {
-        "courseId": "S&S",
-        "classroom": "C102",
-        "classType": "tut"
-      }
-    ],
-    "9:00-9:30": [
-      {
-        "courseId": "S&S",
-        "classroom": "C102",
-        "classType": "tut"
-      }
-    ],
-    "9:30-10:00": [
-      {
-        "courseId": "S&S",
-        "classroom": "C102",
-        "classType": "tut"
-      },
-      {
-        "courseId": "S&S",
-        "classroom": "C102",
-        "classType": "class"
-      },
-      {
-        "courseId": "FOB II",
-        "classroom": "B003",
-        "classType": "class"
-      }
-    ],
-    "10:00-10:30": [
-      {
-        "courseId": "S&S",
-        "classroom": "C102",
-        "classType": "class"
-      },
-      {
-        "courseId": "FOB II",
-        "classroom": "B003",
-        "classType": "class"
-      }
-    ],
-    "10:30-11:00": [
-      {
-        "courseId": "S&S",
-        "classroom": "C102",
-        "classType": "class"
-      },
-      {
-        "courseId": "FOB II",
-        "classroom": "B003",
-        "classType": "class"
-      }
-    ],
-    "11:00-11:30": [
-      {
-        "courseId": "RMSSD",
-        "classroom": "C11",
-        "classType": "class"
-      },
-      {
-        "courseId": "IQB",
-        "classroom": "A006",
-        "classType": "class"
-      },
-      {
-        "courseId": "FOE",
-        "classroom": "C212",
-        "classType": "class"
-      }
-    ],
-    "11:30-12:00": [
-      {
-        "courseId": "RMSSD",
-        "classroom": "C11",
-        "classType": "class"
-      },
-      {
-        "courseId": "IQB",
-        "classroom": "A006",
-        "classType": "class"
-      },
-      {
-        "courseId": "FOE",
-        "classroom": "C212",
-        "classType": "class"
-      }
-    ],
-    "12:00-12:30": [
-      {
-        "courseId": "RMSSD",
-        "classroom": "C11",
-        "classType": "class"
-      },
-      {
-        "courseId": "IQB",
-        "classroom": "A006",
-        "classType": "class"
-      },
-      {
-        "courseId": "FOE",
-        "classroom": "C212",
-        "classType": "class"
-      }
-    ],
-    "12:30-1:00": [
-      {
-        "courseId": "RMSSD",
-        "classroom": "C11",
-        "classType": "class"
-      },
-      {
-        "courseId": "IQB",
-        "classroom": "A006",
-        "classType": "class"
-      },
-      {
-        "courseId": "FOE",
-        "classroom": "C212",
-        "classType": "class"
-      }
-    ],
-    "1:00-1:30": [],
-    "1:30-2:00": [
-      {
-        "courseId": "CTD",
-        "classroom": "LHC-III Floor L302, L303",
-        "classType": "lab"
-      }
-    ],
-    "2:00-2:30": [
-      {
-        "courseId": "CTD",
-        "classroom": "LHC-III Floor L302, L303",
-        "classType": "lab"
-      },
-      {
-        "courseId": "DPP",
-        "classroom": "A106",
-        "classType": "class"
-      }
-    ],
-    "2:30-3:00": [
-      {
-        "courseId": "DPP",
-        "classroom": "A106",
-        "classType": "class"
-      }
-    ],
-    "3:00-3:30": [
-      {
-        "courseId": "DPP",
-        "classroom": "A106",
-        "classType": "class"
-      }
-    ],
-    "3:30-4:00": [
-      {
-        "courseId": "DPP",
-        "classroom": "A106",
-        "classType": "class"
-      }
-    ],
-    "4:00-4:30": [
-      {
-        "courseId": "DPP",
-        "classroom": "A106",
-        "classType": "class"
-      }
-    ],
-    "4:30-5:00": [],
-    "5:00-5:30": [],
-    "5:30-6:00": []
   }
 }
