@@ -417,14 +417,14 @@
     ],
     "2:00-2:30": [
       {
-        "courseId": "Tut AAI",
-        "classroom": "C24, C208, C209",
-        "classType": "tut"
-      },
-      {
         "courseId": "EEE",
         "classroom": "B003",
         "classType": "class"
+      },
+      {
+        "courseId": "Tut AAI",
+        "classroom": "C24, C208, C209",
+        "classType": "tut"
       },
       {
         "courseId": "BE Lab",
@@ -438,6 +438,11 @@
       }
     ],
     "2:30-3:00": [
+      {
+        "courseId": "EEE",
+        "classroom": "B003",
+        "classType": "class"
+      },
       {
         "courseId": "BE Lab",
         "classroom": "LHC: 301, 302, 303",
@@ -1207,13 +1212,7 @@
       }
     ],
     "12:30-1:00": [],
-    "1:00-1:30": [
-      {
-        "courseId": "IMB Tut",
-        "classroom": "C12",
-        "classType": "tut"
-      }
-    ],
+    "1:00-1:30": [],
     "1:30-2:00": [
       {
         "courseId": "IMB Tut",
@@ -1228,12 +1227,23 @@
     ],
     "2:00-2:30": [
       {
+        "courseId": "IMB Tut",
+        "classroom": "C12",
+        "classType": "tut"
+      },
+      {
         "courseId": "ADA Tut",
         "classroom": "C101, C201",
         "classType": "tut"
       }
     ],
-    "2:30-3:00": [],
+    "2:30-3:00": [
+      {
+        "courseId": "IMB Tut",
+        "classroom": "C12",
+        "classType": "tut"
+      }
+    ],
     "3:00-3:30": [
       {
         "courseId": "ACB",
