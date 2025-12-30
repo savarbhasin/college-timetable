@@ -113,14 +113,14 @@ slot_9 = [
 # Monday
 add_slot("Monday", "9:30-10:00", "11:00-11:30", slot_1)
 add_slot("Monday", "11:00-11:30", "12:30-1:00", slot_2)
-add_course("Monday", "1:30-2:00", "2:00-2:30", "EEE", "B003")
+add_course("Monday", "1:30-2:00", "3:00-3:30", "EEE", "B003")
 add_slot("Monday", "3:00-3:30", "4:30-5:00", slot_3)
 add_slot("Monday", "4:30-5:00", "6:00-6:30", slot_4)
 
 # Tuesday
 add_slot("Tuesday", "9:30-10:00", "11:00-11:30", slot_5)
 add_slot("Tuesday", "11:00-11:30", "12:30-1:00", slot_6)
-add_course("Tuesday", "1:00-1:30", "2:00-2:30", "IMB Tut", "C12", "tut")
+add_course("Tuesday", "1:30-2:00", "3:00-3:30", "IMB Tut", "C12", "tut")
 add_slot("Tuesday", "3:00-3:30", "4:00-4:30", slot_7)
 add_slot("Tuesday", "4:30-5:00", "6:00-6:30", slot_8)
 add_course("Tuesday", "5:00-5:30", "6:30-7:00", "RM", "C101")
