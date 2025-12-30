@@ -1,7 +1,7 @@
 'use client';
 import { useRef } from 'react';
 import { Download, Image, FileText } from 'lucide-react';
-import timetableData from '@/public/merged.json';
+import timetableData from '@/public/timetable_extracted.json';
 import { downloadAsICS } from '@/lib/icsDownload';
 import { downloadAsImage } from '@/lib/imgDownload';
 import { TimetableData, TimetableEntry } from '@/lib/types';

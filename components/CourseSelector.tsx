@@ -1,7 +1,7 @@
 'use client';
 import { useState, useRef } from 'react';
 import { Search, X, Check, BookOpen } from 'lucide-react';
-import coursesData from '@/public/courses.json';
+import coursesData from '@/public/courses-new.json';
 import { Course } from '@/lib/types';
 import { useCourseFilter } from '@/hooks/useCourseFilter';
 import { useCourseStore } from '@/lib/courseStore';
