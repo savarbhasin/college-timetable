@@ -153,13 +153,95 @@ slot_9_fri = [
 add_slot("Friday", "11:00-11:30", "12:30-1:00", slot_9_fri)
 add_course("Friday", "11:00-11:30", "1:30-2:00", "AELD", "A007")
 
-add_course("Friday", "12:30-1:00", "2:00-2:30", "Tut TOC", "C03,C13,C22,C24,C208,C209,C214,C215", "tut")
-add_course("Friday", "2:00-2:30", "3:00-3:30", "JLang", "C210, C211")
-add_course("Friday", "2:30-3:00", "3:00-3:30", "Tut SI", "A006", "tut")
-add_course("Friday", "2:30-3:00", "3:00-3:30", "Tut GT", "C212", "tut")
 
-add_course("Friday", "3:00-3:30", "4:30-5:00", "Faculty Meeting Slot", "")
-add_course("Friday", "4:00-4:30", "6:00-6:30", "Seminar Slot", "")
+
+# B.Tech IV Sem Slots
+sem4_orange = [
+    ("GT", "C210"), ("PSD", "C02"), ("SML", "C201")
+]
+
+sem4_green = [
+    ("F&W", "A007"), ("DBMS Sec A", "B003"), ("DBMS Sec B", "C101"), ("SI", "A006")
+]
+
+sem4_yellow = [
+    ("PCS", "C02"), ("AAI", "B105"), ("PIS", "B003"), ("FBI", "C12")
+]
+
+sem4_olive = [
+    ("M-IV Sec A", "C01"), ("M-IV Sec B", "C11"), ("IML", "C03"), 
+    ("EI", "C102"), ("DIS", "C212"), ("BE", "C101")
+]
+
+sem4_blue = [
+    ("COO", "C11"), ("ESD", "C101")
+]
+
+sem4_ada = [
+    ("ADA Sec A", "C101"), ("ADA Sec B", "C102")
+]
+
+sem4_elec_1 = [
+    ("LO", "A006"), ("ST", "C02"), ("PT", "C211"), ("SICSRS", "C22")
+]
+
+sem4_elec_2 = [
+    ("ToC", "C01"), ("IE", "A007"), ("ECO", "C21"), ("FOM", "C13")
+]
+
+sem4_elec_3 = [
+    ("NN", "A007"), ("BP", "A006"), ("SP", "B002"), ("PoE", "B105")
+]
+
+# B.Tech IV Sem Schedule
+
+# Monday
+add_slot("Monday", "9:30-10:00", "10:30-11:00", sem4_orange)
+add_slot("Monday", "11:00-11:30", "12:30-1:00", sem4_green)
+add_course("Monday", "1:30-2:00", "2:30-3:00", "Tut AAI", "C24, C208, C209", "tut")
+add_course("Monday", "1:30-2:00", "2:30-3:00", "EEE", "B003")
+add_course("Monday", "1:00-1:30", "3:00-3:30", "BE Lab", "LHC: 301, 302, 303", "lab")
+add_course("Monday", "1:30-2:00", "2:30-3:00", "Tut F&W", "C214, C215, C216", "tut")
+add_slot("Monday", "2:30-3:00", "4:00-4:30", sem4_ada)
+add_slot("Monday", "4:00-4:30", "5:30-6:00", sem4_elec_1)
+
+# Tuesday
+add_slot("Tuesday", "9:30-10:00", "10:30-11:00", sem4_yellow)
+add_slot("Tuesday", "11:00-11:30", "12:30-1:00", sem4_olive)
+add_course("Tuesday", "1:30-2:00", "2:30-3:00", "ADA Tut", "C101, C201", "tut")
+add_slot("Tuesday", "2:30-3:00", "4:00-4:30", sem4_elec_2)
+add_slot("Tuesday", "4:00-4:30", "5:30-6:00", sem4_elec_3)
+
+# Wednesday
+add_course("Wednesday", "8:30-9:00", "9:30-10:00", "ECO Tut", "C21", "tut")
+add_slot("Wednesday", "9:30-10:00", "10:30-11:00", sem4_blue)
+add_slot("Wednesday", "11:00-11:30", "12:30-1:00", sem4_green)
+add_course("Wednesday", "1:30-2:00", "2:30-3:00", "Tut M-IV", "C12,C13,C22,C24,C208,C209,C214,C215,C216,L1,L2,L3,C210,C211,C212,C213,C02", "tut")
+add_course("Wednesday", "1:00-1:30", "3:00-3:30", "BE Lab", "LHC: 301, 302, 303", "lab")
+add_slot("Wednesday", "2:30-3:00", "4:00-4:30", sem4_ada)
+add_slot("Wednesday", "4:00-4:30", "5:30-6:00", sem4_elec_1)
+
+# Thursday
+add_slot("Thursday", "9:30-10:00", "10:30-11:00", sem4_orange)
+add_slot("Thursday", "11:00-11:30", "12:30-1:00", sem4_olive)
+add_course("Thursday", "1:30-2:00", "2:30-3:00", "DBMS Tut", "C03,C13,C22,C24,C208,C209,C214,C215,C216,L1,L2,L3,C210,C211,C212,C213,C02,C12", "tut")
+add_course("Thursday", "1:30-2:00", "2:30-3:00", "Tut PCS", "A007", "tut")
+add_course("Thursday", "1:30-2:00", "2:30-3:00", "Tut ESD", "A006", "tut")
+add_slot("Thursday", "2:30-3:00", "4:00-4:30", sem4_elec_2)
+add_slot("Thursday", "4:00-4:30", "5:30-6:00", sem4_elec_3)
+
+# Friday
+add_course("Friday", "8:30-9:00", "9:30-10:00", "Tut BE", "C03,C13,C22,C24,C208,C209,C214,C215,C216", "tut")
+add_slot("Friday", "9:30-10:00", "10:30-11:00", sem4_yellow)
+add_slot("Friday", "10:30-11:00", "12:30-1:00", sem4_blue)
+add_course("Friday", "12:30-1:00", "1:30-2:00", "Tut TOC", "C03,C13,C22,C24,C208,C209,C214,C215", "tut")
+add_course("Friday", "2:00-2:30", "2:30-3:00", "Tut SI", "C208,C209,C214,C215", "tut")
+add_course("Friday", "2:00-2:30", "3:00-3:30", "Tut GT", "C22,C24", "tut")
+add_course("Friday", "2:00-2:30", "2:30-3:00", "Tut IE", "A007", "tut")
+add_course("Friday", "2:30-3:00", "4:00-4:30", "Lab IE All Groups", "Lab", "lab")
+add_course("Friday", "2:30-3:00", "4:00-4:30", "Lab 302, 303 (LHC)", "LHC", "lab")
+add_course("Friday", "2:30-3:00", "4:00-4:30", "Faculty Meeting Slot", "")
+add_course("Friday", "4:00-4:30", "5:30-6:00", "Seminar Slot", "")
 
 print(json.dumps(data, indent=2))
 
