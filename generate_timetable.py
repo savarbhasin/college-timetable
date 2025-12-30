@@ -121,8 +121,8 @@ add_slot("Monday", "4:30-5:00", "6:00-6:30", slot_4)
 add_slot("Tuesday", "9:30-10:00", "11:00-11:30", slot_5)
 add_slot("Tuesday", "11:00-11:30", "12:30-1:00", slot_6)
 add_course("Tuesday", "1:00-1:30", "2:00-2:30", "IMB Tut", "C12", "tut")
-add_slot("Tuesday", "2:30-3:00", "3:30-4:00", slot_7)
-add_slot("Tuesday", "3:30-4:00", "5:00-5:30", slot_8)
+add_slot("Tuesday", "3:00-3:30", "4:00-4:30", slot_7)
+add_slot("Tuesday", "4:30-5:00", "6:00-6:30", slot_8)
 add_course("Tuesday", "5:00-5:30", "6:30-7:00", "RM", "C101")
 
 # Wednesday
@@ -137,9 +137,9 @@ add_slot("Thursday", "9:30-10:00", "11:00-11:30", slot_1)
 add_slot("Thursday", "11:00-11:30", "12:30-1:00", slot_6)
 add_course("Thursday", "12:30-1:00", "1:30-2:00", "ALA Tut", "C03", "tut")
 add_course("Thursday", "12:30-1:00", "1:30-2:00", "GRS Tut", "C01", "tut")
-add_slot("Thursday", "2:30-3:00", "3:30-4:00", slot_7)
+add_slot("Thursday", "3:00-3:30", "4:00-4:30", slot_7)
 add_course("Thursday", "3:30-4:00", "5:00-5:30", "NAI", "A006") # Extra course in slot 8 overlap
-add_slot("Thursday", "3:30-4:00", "5:00-5:30", slot_8)
+add_slot("Thursday", "4:30-5:00", "6:00-6:30", slot_8)
 
 # Friday
 add_slot("Friday", "9:30-10:00", "11:00-11:30", slot_5)
@@ -202,15 +202,15 @@ add_course("Monday", "1:30-2:00", "2:30-3:00", "Tut AAI", "C24, C208, C209", "tu
 add_course("Monday", "1:30-2:00", "2:30-3:00", "EEE", "B003")
 add_course("Monday", "1:00-1:30", "3:00-3:30", "BE Lab", "LHC: 301, 302, 303", "lab")
 add_course("Monday", "1:30-2:00", "2:30-3:00", "Tut F&W", "C214, C215, C216", "tut")
-add_slot("Monday", "2:30-3:00", "4:00-4:30", sem4_ada)
-add_slot("Monday", "4:00-4:30", "5:30-6:00", sem4_elec_1)
+add_slot("Monday", "3:00-3:30", "4:30-5:00", sem4_ada)
+add_slot("Monday", "4:30-5:00", "6:00-6:30", sem4_elec_1)
 
 # Tuesday
 add_slot("Tuesday", "9:30-10:00", "10:30-11:00", sem4_yellow)
 add_slot("Tuesday", "11:00-11:30", "12:30-1:00", sem4_olive)
 add_course("Tuesday", "1:30-2:00", "2:30-3:00", "ADA Tut", "C101, C201", "tut")
-add_slot("Tuesday", "2:30-3:00", "4:00-4:30", sem4_elec_2)
-add_slot("Tuesday", "4:00-4:30", "5:30-6:00", sem4_elec_3)
+add_slot("Tuesday", "3:00-3:30", "4:30-5:00", sem4_elec_2)
+add_slot("Tuesday", "4:30-5:00", "6:00-6:30", sem4_elec_3)
 
 # Wednesday
 add_course("Wednesday", "8:30-9:00", "9:30-10:00", "ECO Tut", "C21", "tut")
@@ -218,8 +218,8 @@ add_slot("Wednesday", "9:30-10:00", "10:30-11:00", sem4_blue)
 add_slot("Wednesday", "11:00-11:30", "12:30-1:00", sem4_green)
 add_course("Wednesday", "1:30-2:00", "2:30-3:00", "Tut M-IV", "C12,C13,C22,C24,C208,C209,C214,C215,C216,L1,L2,L3,C210,C211,C212,C213,C02", "tut")
 add_course("Wednesday", "1:00-1:30", "3:00-3:30", "BE Lab", "LHC: 301, 302, 303", "lab")
-add_slot("Wednesday", "2:30-3:00", "4:00-4:30", sem4_ada)
-add_slot("Wednesday", "4:00-4:30", "5:30-6:00", sem4_elec_1)
+add_slot("Wednesday", "3:00-3:30", "4:30-5:00", sem4_ada)
+add_slot("Wednesday", "4:30-5:00", "6:00-6:30", sem4_elec_1)
 
 # Thursday
 add_slot("Thursday", "9:30-10:00", "10:30-11:00", sem4_orange)
@@ -227,8 +227,8 @@ add_slot("Thursday", "11:00-11:30", "12:30-1:00", sem4_olive)
 add_course("Thursday", "1:30-2:00", "2:30-3:00", "DBMS Tut", "C03,C13,C22,C24,C208,C209,C214,C215,C216,L1,L2,L3,C210,C211,C212,C213,C02,C12", "tut")
 add_course("Thursday", "1:30-2:00", "2:30-3:00", "Tut PCS", "A007", "tut")
 add_course("Thursday", "1:30-2:00", "2:30-3:00", "Tut ESD", "A006", "tut")
-add_slot("Thursday", "2:30-3:00", "4:00-4:30", sem4_elec_2)
-add_slot("Thursday", "4:00-4:30", "5:30-6:00", sem4_elec_3)
+add_slot("Thursday", "3:00-3:30", "4:30-5:00", sem4_elec_2)
+add_slot("Thursday", "4:30-5:00", "6:00-6:30", sem4_elec_3)
 
 # Friday
 add_course("Friday", "8:30-9:00", "9:30-10:00", "Tut BE", "C03,C13,C22,C24,C208,C209,C214,C215,C216", "tut")

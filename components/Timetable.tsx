@@ -18,7 +18,7 @@ const timeSlots = Object.keys(data['Monday']);
 export default function Timetable() {
   const timetableRef = useRef<HTMLDivElement>(null);
   const { selectedCourses } = useCourseStore();
-  
+
 
   const handleDownloadICS = () => {
     downloadAsICS(timetableRef, timeSlots, data, selectedCourses);
@@ -27,28 +27,29 @@ export default function Timetable() {
   const handleDownloadImage = () => {
     downloadAsImage(timetableRef);
   };
-  
+
   const renderCellContent = (entries: TimetableEntry[], day: string, slot: string) => {
     if (entries.length === 0) {
-      return <div className="h-16 flex items-center justify-center text-muted-foreground text-xs"></div>;
+      return <div className="h-full min-h-[5rem] flex items-center justify-center text-muted-foreground/20 text-sm"></div>;
     }
 
     return (
-      <div className="flex flex-col gap-1 p-2 h-full min-h-16">
+      <div className="flex flex-col gap-2 p-1 h-full min-h-[5rem]">
         {entries.map(({ courseId, classroom, classType }) => (
           <div
             key={`${day}-${slot}-${courseId}`}
             className={`
               ${generateCourseColor(courseId)}
-              border rounded px-2 py-1 text-xs font-medium
-              transition-all hover:scale-105 flex flex-col items-center text-center
-              max-w-full
+              border rounded-lg px-3 py-2 shadow-sm
+              transition-all duration-200 hover:scale-[1.02] hover:shadow-md
+              flex flex-col justify-center items-center text-center
+              h-full w-full backdrop-blur-sm
             `}
           >
-            <div className="font-semibold text-xs leading-tight w-full break-words">{courseId}</div>
-            <div className="text-xs opacity-80 leading-tight w-full break-words">{classroom}</div>
+            <div className="font-bold text-sm md:text-base leading-tight w-full break-words tracking-tight">{courseId}</div>
+            <div className="text-xs md:text-sm font-medium opacity-90 leading-tight w-full break-words mt-0.5">{classroom}</div>
             {classType !== 'class' && (
-              <div className="text-xs opacity-60 uppercase leading-tight w-full break-words">{classType}</div>
+              <div className="text-[10px] md:text-xs font-bold opacity-75 uppercase tracking-wider mt-1 bg-black/10 rounded px-1.5 py-0.5 inline-block">{classType}</div>
             )}
           </div>
         ))}
@@ -57,7 +58,7 @@ export default function Timetable() {
   };
 
   return (
-    <div className="bg-card border rounded-xl p-6 shadow-lg">
+    <div className="bg-card/40 backdrop-blur-xl border border-white/10 rounded-2xl p-6 shadow-2xl ring-1 ring-white/5">
       <div className="flex flex-col md:flex-row items-center justify-between mb-6">
         <div>
           <h2 className="text-xl font-semibold text-card-foreground">
@@ -72,7 +73,7 @@ export default function Timetable() {
             Your personalized weekly schedule
           </p>
         </div>
-        
+
         {selectedCourses.length > 0 && (
           <div className="flex space-x-2 mt-2 md:mt-0">
             <button
@@ -99,26 +100,24 @@ export default function Timetable() {
           </div>
         )}
       </div>
-      
-      {selectedCourses.length > 0 && <div ref={timetableRef} className="overflow-x-auto rounded-md">
-        <table className="w-full border-collapse border-spacing-0">
+
+      {selectedCourses.length > 0 && <div ref={timetableRef} className="overflow-x-auto rounded-xl border bg-card/50 backdrop-blur-sm shadow-inner">
+        <table className="w-full border-collapse border-spacing-0 min-w-[1000px]">
           <thead>
             <tr>
-              <th className="bg-muted text-muted-foreground font-medium p-2 text-left w-16">
+              <th className="sticky left-0 z-20 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-r font-bold p-4 text-left w-24 text-sm shadow-[4px_0_24px_-2px_rgba(0,0,0,0.1)]">
                 Day
               </th>
               {timeSlots.map((slot) => (
                 <th
                   key={slot}
-                  className="bg-muted text-muted-foreground font-medium p-1 text-center w-20"
+                  className="bg-muted/30 text-muted-foreground font-semibold p-3 text-center w-32 border-b border-r last:border-r-0 min-w-[100px]"
                 >
-                  <div className={`text-[8px] leading-tight font-bold`}>
+                  <div className="text-xs uppercase tracking-wider">
                     {formatTimeSlot(slot)}
                   </div>
                 </th>
               ))}
-
-
             </tr>
           </thead>
           <tbody>
@@ -129,12 +128,12 @@ export default function Timetable() {
                 const currentSlot = timeSlots[i];
                 const currentEntries = getFilteredEntries(data, selectedCourses, day, currentSlot);
                 const { colSpan, nextIndex } = calculateColSpan(data, selectedCourses, day, timeSlots, i);
-                
+
                 rowCells.push(
                   <td
                     key={`${day}-${currentSlot}`}
                     colSpan={colSpan}
-                    className="align-top min-h-16 p-0"
+                    className="align-top p-1 border-b border-r last:border-r-0 border-border/50 bg-card/30"
                   >
                     {renderCellContent(currentEntries, day, currentSlot)}
                   </td>
@@ -143,10 +142,10 @@ export default function Timetable() {
               }
 
               return (
-                <tr key={day} className="hover:bg-accent/50 transition-colors">
-                  <td className="bg-muted/50 text-card-foreground font-medium p-2 text-sm">
+                <tr key={day} className="group hover:bg-muted/20 transition-colors">
+                  <td className="sticky left-0 z-10 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 text-foreground font-bold p-4 text-sm border-b border-r border-border shadow-[4px_0_24px_-2px_rgba(0,0,0,0.1)] group-hover:bg-background/80 transition-colors">
                     {day}
-                  </td> 
+                  </td>
                   {rowCells}
                 </tr>
               );
@@ -154,7 +153,7 @@ export default function Timetable() {
           </tbody>
         </table>
       </div>}
-      
+
       {selectedCourses.length === 0 && (
         <div className="text-center py-12 text-muted-foreground">
           <div className="mb-4">

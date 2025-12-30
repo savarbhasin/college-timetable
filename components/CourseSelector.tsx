@@ -9,14 +9,14 @@ import { useCourseStore } from '@/lib/courseStore';
 export default function CourseSelector() {
   const [isExpanded, setIsExpanded] = useState(true);
   const searchInputRef = useRef<HTMLInputElement>(null);
-  
+
   const { selectedCourses, toggleCourse, clearCourses } = useCourseStore();
   const courses = coursesData as Course[];
   const { filter, setFilter, filteredCourses, hasFilter } = useCourseFilter(courses);
 
   const handleToggle = (courseId: string) => {
     toggleCourse(courseId);
-    
+
     setTimeout(() => {
       searchInputRef.current?.focus();
     }, 0);
@@ -27,7 +27,7 @@ export default function CourseSelector() {
   };
 
   return (
-    <div className="bg-card border rounded-xl p-6 mb-6 shadow-lg">
+    <div className="bg-card/40 backdrop-blur-xl border border-white/10 rounded-2xl p-6 mb-6 shadow-2xl ring-1 ring-white/5">
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center space-x-3">
           <div className="p-2 bg-primary/10 rounded-lg">
@@ -70,7 +70,7 @@ export default function CourseSelector() {
             <h3 className="text-sm font-medium text-card-foreground">
               Selected Courses ({selectedCourses.length})
             </h3>
-            
+
           </div>
           <div className="flex flex-wrap gap-2">
             {selectedCourses.map((courseId) => (
@@ -98,7 +98,7 @@ export default function CourseSelector() {
       {/* Course Grid */}
       <div className={`transition-all duration-300 ${isExpanded || hasFilter || selectedCourses.length === 0 ? `max-h-80` : 'max-h-0'} overflow-hidden`}>
         <div className=
-        {`
+          {`
           grid px-1 grid-cols-1 sm:grid-cols-1 lg:grid-cols-4 gap-3 
           max-h-80 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-border scrollbar-track-transparent
         `}>
@@ -110,8 +110,8 @@ export default function CourseSelector() {
                 onClick={() => handleToggle(courseId)}
                 className={`
                   relative p-4 rounded-lg border-2 cursor-pointer transition-all duration-200 hover:scale-[1.02]
-                  ${isSelected 
-                    ? 'bg-primary/10 border-primary shadow-md' 
+                  ${isSelected
+                    ? 'bg-primary/10 border-primary shadow-md'
                     : 'bg-card border-border hover:border-primary/50 hover:bg-accent/50'
                   }
                 `}
@@ -135,7 +135,7 @@ export default function CourseSelector() {
                     )}
                   </div>
                 </div>
-                
+
                 {/* Hover Effect */}
                 <div className={`absolute inset-0 rounded-lg transition-opacity ${isSelected ? 'opacity-0' : 'opacity-0 hover:opacity-100'} bg-primary/5`} />
               </div>
